@@ -69,9 +69,6 @@ nav a:last-child:hover {
   background-color: var(--grey-color);
 }
 
-
-
-
 /* MAIN ------------------------------------ */
 
 h1 {
@@ -164,7 +161,7 @@ h1 span {
 }
 
 .links {
-  margin-bottom: 20px;
+  margin-bottom: 39px;
   font-family: var(--TripSans-typo);
   font-size: 12px;
   line-height: 12px;;
@@ -186,6 +183,7 @@ h1 span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .description {
@@ -195,7 +193,7 @@ h1 span {
 
 .description h2 {
   font-family: var(--TripSansMedium-typo);
-  font-size: 28px;
+  font-size: 25px;
   line-height: 33px;
   font-weight: bolder;
   margin-bottom: 20px;
@@ -254,3 +252,76 @@ h1 span {
   border-radius: 0 0 10px 10px;
 }
 
+/* SECTION : LES IMMANQUABLES ------------------------------------ */
+
+.unmissable h2 {
+  font-family: var(--TripSansMedium-typo);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.unmissable-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.entertain {
+  max-width: 272px;
+  margin-right: 68px;
+}
+
+.entertain-pictures {
+  max-width: 848px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.entertain-block {
+  position: relative;
+  margin-right: 14px;
+  cursor:pointer;
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
+.entertain-block:hover {
+  opacity: 80%;
+}
+
+
+
+/* .entertain-block img {
+  margin-bottom: 5px;
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
+.entertain-block:hover {
+  opacity: 80%;
+  text-decoration: underline;
+}
+
+.entertain-block h4:hover {
+  opacity: 100%;
+  text-decoration: none;
+}
+
+.entertain-block i {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.entertain-block h4 {
+  font-family: var(--TripSans-typo);
+  font-weight: bold;
+}
+
+.entertain-block h4:hover {
+  text-decoration: underline;
+} */
