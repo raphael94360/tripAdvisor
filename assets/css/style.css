@@ -1,26 +1,6 @@
-/* GENERAL ----------------------------------------- */
-body {
-  background-color: white;
-  font-family: "Trip Sans", sans-serif;
-  box-sizing: border-box;
-  margin: 50px 0px;
-}
+@import url("variables.css");
+@import url("general.css");
 
-i {
-  font-size: 20px;
-  margin-right: 4px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.container {
-  width: 1135px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* HEADER -------------------------------------------- */
 
@@ -28,14 +8,19 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
+}
+
+.logo {
+  width: 187px;
+  height: 40px;
 }
 
 input {
   width: 340px;
   border: 1px solid #ddd;
   border-radius: 20px;
-  margin-left: -40px;
   padding: 10px 20px 10px 40px;
   background-image: url('../img/search.png');
   background-position: 10px 10px;
@@ -45,57 +30,60 @@ input {
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
-  font-family: "Trip Sans Medium";
+  font-family: var(--TripSans-typo);
   font-size: 1rem;
-  font-weight: 500;
-  line-height: 30px;
-  padding: 5px 10px;
+  font-weight: 600;
+  padding: 10px;
   margin-right: 15px;
   cursor: pointer;
 }
 
+i {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
 nav a:hover {
   background-color: #eee;
-  padding: 5px 10px;
-  line-height: 30px;
+  padding: 10px;
   border-radius: 20px;
 }
 
 nav a:last-child {
-  background-color: black;
-  color: white;
-  padding: 10px 14px;
-  line-height: 22px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 13px 15px;
   border-radius: 20px;
-  font-family: "Trip Sans Medium";
-  // transition: background-color 1s;
+  font-family: var(--TripSans-typo);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 1s;
 }
 
 nav a:last-child:hover {
-  background-color: #333;
+  background-color: var(--grey-color);
 }
 
 
-.logo {
-  width: 187px;
-  height: 40px;
-}
+
 
 /* MAIN ------------------------------------ */
 
 h1 {
-  font-family: "Trip Sans Medium";
+  font-family: var(--TripSansMedium-typo);
   font-size: 54px;
-  font-weight: bolder;
+  font-weight: 900;
   letter-spacing: 1.1px;
   margin-bottom: 20px;
 }
 
 h1 span {
-  color: #FF5D5D;
+  color: var(--pink-color);
 }
 
 
@@ -108,19 +96,19 @@ h1 span {
 
 .links-list a {
   width: 150px;
-  border: 1px solid black;
+  border: 1px solid var(--black-color);
   padding: 18px 14px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Trip Sans Medium";
+  font-family: var(--TripSansMedium-typo);
   cursor: pointer;
 }
 
 .links-list a:hover {
   color: white;
-  background-color: black;
+  background-color: var(--black-color);
 }
 
 .pictures {
@@ -135,16 +123,16 @@ h1 span {
   position: absolute;
   left: 20px;
   bottom: 17px;
-  color: white;
+  color: var(--white-color);
   padding: 10px;
-  background-color: black;
+  background-color: var(--black-color);
   border-radius: 20px;
   font-size: 12px;
-  font-family: "Trip Sans Medium";
+  font-family: var(--TripSansMedium-typo);
 }
 
 .pictures a:hover {
-  background-color: #333;
+  background-color: var(--grey-color);
 }
 
 .pictures a i {
@@ -177,10 +165,10 @@ h1 span {
 
 .links {
   margin-bottom: 20px;
-  font-family: "Trip Sans";
+  font-family: var(--TripSans-typo);
   font-size: 12px;
   line-height: 12px;;
-  color: #333;
+  color: var(--grey-color);
 }
 
 .links a:hover {
@@ -197,7 +185,7 @@ h1 span {
 .bloc-description {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
+  justify-content: space-between;
 }
 
 .description {
@@ -206,7 +194,7 @@ h1 span {
 }
 
 .description h2 {
-  font-family: "Trip Sans Medium";
+  font-family: var(--TripSansMedium-typo);
   font-size: 28px;
   line-height: 33px;
   font-weight: bolder;
@@ -214,10 +202,10 @@ h1 span {
 }
 
 .description p {
-  font-family: Georgia, serif;
+  font-family: var(--Georgia-typo);
   font-size: 20px;
   line-height: 24px;
-  color: #333;
+  color: var(--grey-color);
 }
 
 .organisation {
@@ -227,34 +215,36 @@ h1 span {
 }
 
 .paris {
-  background-color: #FF5D5D;
+  background-color: var(--pink-color);
   padding: 30px;
   border-radius: 10px 10px 0 0;
 }
 
 .paris h2 {
-  font-size: "Trip Sans Medium";
+  font-family: var(--TripSansMedium-typo);
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .paris p {
-  font-family: "Trip Sans Medium";
-  font-size: 14px;
-  font-weight: 400;
+  font-family: var(--TripSansMedium-typo);
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
-.paris h3 {
-  font-family: "Trip Sans";
+.paris a {
+  display: block;
+  font-family: var(--TripSans-typo);
   font-size: 13px;
   font-weight: 100;
-  color: white;
+  color: var(--white-color);
   padding: 20px;
-  background-color: #333;
+  background-color: var(--grey-color);
   width: 100px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .paris-map img {
