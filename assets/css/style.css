@@ -274,6 +274,7 @@ h2 {
   flex-direction: row;
   position: relative;
   margin-bottom: 102px;
+  /* background-color: darkblue; */
 }
 
 .unmissable-arrow i {
@@ -288,7 +289,6 @@ h2 {
   border-radius: 50%;
   border: 2px solid var(--black-color);
 }
-
 
 .unmissable-arrow i:hover {
   color: var(--white-color);
@@ -433,7 +433,7 @@ h2 {
 }
 
 
-/* TENDANCE DANS LES FORUMS ------------------------------------ */
+/* TRENDS OF FORUMS ------------------------------------ */
 
 
 .tendance-title {
@@ -459,6 +459,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 86px;
 }
 
 .tendance-content-block {
@@ -508,5 +509,128 @@ h2 {
 }
 
 
+/* RENT A FLAT FOR YOUR NEXT GETAWAY ----------------------------- */
 
+
+.popularlocation-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popularlocation-title h3 {
+  font-family: var(--TripSansMedium-typo);
+  font-size: 24px;
+}
+
+.popularlocation-title a {
+  font-family: var(--TripSans-typo);
+  font-size: 16px;
+  font-weight: 600;
+  color: #545454;
+  text-decoration: underline;
+}
+
+.popularlocation-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* width: 1135px; */
+  /* justify-content: space-between; */
+  overflow-x: auto;
+  /* background-color: darkblue; */
+}
+
+.popularlocation-arrow .arrow i {
+  position: absolute;
+  top: 120px;
+  right:-20px;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: bolder;
+  background-color: var(--white-color);
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid var(--black-color);
+}
+
+.popularlocation-arrow .arrow i:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.popularlocation-content-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 17px;
+}
+
+.popularlocation-content-block img {
+  width: 364px;
+  height: 272px;
+  margin-bottom: 8px;
+}
+
+.popularlocation-content-block i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--white-color);
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.popularlocation-content-block h4 {
+  font-family: var(--TripSansMedium-typo);
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 3px;
+}
+
+.popularlocation-content-block .popularity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popularlocation-content-block .popularity ul {
+  margin-right: 7px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+.popularlocation-content-block .popularity li {
+  font-size: var(--TripSans-typo);
+  margin-right: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: #00AA6C;
+  border-radius: 50%;
+  border: 1px solid #00AA6C;
+}
+
+.popularlocation-content-block .popularity li:last-child {
+  background-color: var(--white-color);
+  border: 1px solid #00AA6C;
+}
+
+.popularlocation-content-block .popularity p {
+  font-family: var(--TripSans-typo);
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.popularlocation-content-block p {
+  font-family: var(--TripSans-typo);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.popularlocation-content-block p span {
+  font-family: var(--TripSansMedium-typo);
+  font-size: 16px;
+}
 
