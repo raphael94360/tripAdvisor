@@ -1,0 +1,32 @@
+/* FOOTER ------------------------------------------ */
+
+.footer-container {
+  height: 156px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: var(--pink-color);
+  border-top: 1px solid black;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.footer-content img {
+  width: 50px;
+  height: 50px;;
+}
+
+.footer-content p {
+  padding: 20px 0;
+}
+
+.footer-content p span {
+  font-family: var(--TripSansMedium-typo);
+}
