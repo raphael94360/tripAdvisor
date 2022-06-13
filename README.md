@@ -6,4 +6,5 @@
 - FontAwesome
 - Fonts de TripAdvisor
 
-![Projet d'intégration d'une page de TripAdvisor](/assets/img/tripAdvisor.png)
+
+Demo at this page (https://www.raphael-pinet.fr/).
