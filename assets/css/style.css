@@ -104,10 +104,12 @@ h2 {
 
 .unmissable-right-block .award {
   position: absolute;
-  width: 32px;
-  height: 32px;
-  top: 160px;
+  width: 30px;
+  height: 45px;
+  top: 140px;
   left: 10px;
+  border-top-left-radius: 32%;
+  border-top-right-radius: 32%;
 }
 
 .unmissable-right-block .michelin {
