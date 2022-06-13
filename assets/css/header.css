@@ -5,22 +5,25 @@
     top: 0;
     left: 0;
     right: 0;;
-    height: 150px;
-    max-width: 1135px;
+    height: 130px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    // margin-bottom: 30px;
     background-color: var(--white-color);
+    border-bottom: 1px solid black;
+
     z-index: 1000;
   }
   
   .logo {
     width: 187px;
     height: 40px;
+    margin-right: 30px;
   }
   
   input {
@@ -31,6 +34,7 @@
     background-image: url('../img/search.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
+    margin-right:30px;
   }
   
   nav {
