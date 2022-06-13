@@ -169,7 +169,8 @@ h2 {
 
 .unmissable-right-block .popularity p {
   font-size: var(--TripSans-typo);
-  font-size: 13px;
+  font-size: 12px;
+  padding-bottom: 5px;
 }
 
 
