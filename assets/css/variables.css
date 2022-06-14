@@ -1,14 +1,14 @@
 :root {
     
     /* TYPO ----------------------------------- */
-    --TripSansMedium-typo: "Trip Sans Medium", sans-serif;
-    --TripSans-typo: "Trip Sans", sans-serif;
-    --Georgia-typo: Georgia, serif;
-    --TripSans-VF-typo: TripSans-VF, sans-serif;
+    --TripSansMedium: "Trip Sans Medium", sans-serif;
+    --TripSans: "Trip Sans", sans-serif;
+    --Georgia: Georgia, serif;
+    --TripSans-VF: TripSans-VF, sans-serif;
 
     /* COLOR ---------------------------------- */
-    --black-color: black;
-    --pink-color: #FF5D5D;
-    --grey-color: #333;
-    --white-color: #fff;
+    --black: black;
+    --pink: #FF5D5D;
+    --grey: #333;
+    --white: #fff;
 }

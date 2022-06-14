@@ -13,8 +13,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // margin-bottom: 30px;
-    background-color: var(--white-color);
+    margin-bottom: 30px;
+    background-color: var(--white);
     border-bottom: 1px solid black;
 
     z-index: 1000;
@@ -45,7 +45,7 @@
   }
   
   nav a {
-    font-family: var(--TripSans-typo);
+    font-family: var(--TripSans);
     font-size: 1rem;
     font-weight: 600;
     padding: 10px;
@@ -65,16 +65,16 @@
   }
   
   nav a:last-child {
-    background-color: var(--black-color);
-    color: var(--white-color);
+    background-color: var(--black);
+    color: var(--white);
     padding: 13px 15px;
     border-radius: 20px;
-    font-family: var(--TripSans-typo);
+    font-family: var(--TripSans);
     font-size: 1rem;
     font-weight: 600;
     transition: background-color 1s;
   }
   
   nav a:last-child:hover {
-    background-color: var(--grey-color);
+    background-color: var(--grey);
   }

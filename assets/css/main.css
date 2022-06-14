@@ -9,7 +9,7 @@
 }
 
 h1 {
-    font-family: var(--TripSansMedium-typo);
+    font-family: var(--TripSansMedium);
     font-size: 54px;
     font-weight: 900;
     letter-spacing: 1.1px;
@@ -18,7 +18,7 @@ h1 {
   }
   
   h1 span {
-    color: var(--pink-color);
+    color: var(--pink);
   }
   
   
@@ -31,19 +31,19 @@ h1 {
   
   .links-list a {
     width: 150px;
-    border: 1px solid var(--black-color);
+    border: 1px solid var(--black);
     padding: 18px 14px;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: var(--TripSansMedium-typo);
+    font-family: var(--TripSansMedium);
     cursor: pointer;
   }
   
   .links-list a:hover {
     color: white;
-    background-color: var(--black-color);
+    background-color: var(--black);
   }
   
   .pictures {
@@ -58,16 +58,16 @@ h1 {
     position: absolute;
     left: 20px;
     bottom: 17px;
-    color: var(--white-color);
+    color: var(--white);
     padding: 10px;
-    background-color: var(--black-color);
+    background-color: var(--black);
     border-radius: 20px;
     font-size: 12px;
-    font-family: var(--TripSansMedium-typo);
+    font-family: var(--TripSansMedium);
   }
   
   .pictures a:hover {
-    background-color: var(--grey-color);
+    background-color: var(--grey);
   }
   
   .pictures a i {
@@ -100,10 +100,10 @@ h1 {
   
   .links {
     margin-bottom: 39px;
-    font-family: var(--TripSans-typo);
+    font-family: var(--TripSans);
     font-size: 12px;
     line-height: 12px;;
-    color: var(--grey-color);
+    color: var(--grey);
   }
   
   .links a:hover {
@@ -130,7 +130,7 @@ h1 {
   }
   
   .description h2 {
-    font-family: var(--TripSansMedium-typo);
+    font-family: var(--TripSansMedium);
     font-size: 25px;
     line-height: 33px;
     font-weight: bolder;
@@ -138,10 +138,10 @@ h1 {
   }
   
   .description p {
-    font-family: var(--Georgia-typo);
+    font-family: var(--Georgia);
     font-size: 20px;
     line-height: 24px;
-    color: var(--grey-color);
+    color: var(--grey);
   }
   
   .organisation {
@@ -151,20 +151,20 @@ h1 {
   }
   
   .paris {
-    background-color: var(--pink-color);
+    background-color: var(--pink);
     padding: 30px;
     border-radius: 10px 10px 0 0;
   }
   
   .paris h2 {
-    font-family: var(--TripSansMedium-typo);
+    font-family: var(--TripSansMedium);
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 20px;
   }
   
   .paris p {
-    font-family: var(--TripSansMedium-typo);
+    font-family: var(--TripSansMedium);
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -172,12 +172,12 @@ h1 {
   
   .paris a {
     display: block;
-    font-family: var(--TripSans-typo);
+    font-family: var(--TripSans);
     font-size: 13px;
     font-weight: 100;
-    color: var(--white-color);
+    color: var(--white);
     padding: 20px;
-    background-color: var(--grey-color);
+    background-color: var(--grey);
     width: 100px;
     border-radius: 20px;
     cursor: pointer;

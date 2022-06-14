@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-  background-color: var(--pink-color);
+  background-color: var(--pink);
   border-top: 1px solid black;
 }
 
@@ -28,5 +28,5 @@
 }
 
 .footer-content p span {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
 }

@@ -8,7 +8,7 @@
 /* SECTION : LES IMMANQUABLES ------------------------------------ */
 
 h2 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 27px;
   font-weight: bolder;
   margin-bottom: 30px;
@@ -28,15 +28,15 @@ h2 {
   z-index: 1;
   font-size: 22px;
   font-weight: bolder;
-  background-color: var(--white-color);
+  background-color: var(--white);
   padding: 7px;
   border-radius: 50%;
-  border: 2px solid var(--black-color);
+  border: 2px solid var(--black);
 }
 
 .arrow-1 i:hover {
-  color: var(--white-color);
-  background-color: var(--black-color);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .unmissable-left {
@@ -47,21 +47,21 @@ h2 {
 }
 
 .unmissable-left h3 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 24px;
   margin-bottom: 28px;
 
 }
 
 .unmissable-left p {
-  font-family: var(--Georgia-typo);
+  font-family: var(--Georgia);
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 15px;
 }
 
 .unmissable-left a {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 16px;
   text-decoration: underline;
   color: #545454;
@@ -97,7 +97,7 @@ h2 {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: var(--white-color);
+  background-color: var(--white);
   padding: 7px;
   border-radius: 50%;
 }
@@ -122,7 +122,7 @@ h2 {
   color: #be2837;
   background-color: #faf1ed;
   border-radius: 3px;
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 12px;
   font-weight: bold;
 }
@@ -136,7 +136,7 @@ h2 {
 }
 
 .unmissable-right-block h4 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -156,7 +156,7 @@ h2 {
 }
 
 .unmissable-right-block .popularity li {
-  font-size: var(--TripSans-typo);
+  font-size: var(--TripSans);
   margin-right: 1px;
   width: 10px;
   height: 10px;
@@ -166,12 +166,12 @@ h2 {
 }
 
 .unmissable-right-block .popularity li:last-child {
-  background-color: var(--white-color);
+  background-color: var(--white);
   border: 1px solid #00AA6C;
 }
 
 .unmissable-right-block .popularity p {
-  font-size: var(--TripSans-typo);
+  font-size: var(--TripSans);
   font-size: 12px;
   padding-bottom: 5px;
 }
@@ -195,12 +195,12 @@ h2 {
 }
 
 .tendance-title h3 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 24px;
 }
 
 .tendance-title a {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 16px;
   text-decoration: underline;
   color: #545454;
@@ -230,7 +230,7 @@ h2 {
 }
 
 .tendance-content-block p {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 18px;
   line-height: 23px;
 }
@@ -249,12 +249,12 @@ h2 {
 }
 
 .tendance-content-block-profil p {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 16px;
 }
 
 .tendance-content-block-profil p span {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 16px;
   padding-right: 5px;
 }
@@ -271,12 +271,12 @@ h2 {
 }
 
 .popularlocation-title h3 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 24px;
 }
 
 .popularlocation-title a {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 16px;
   font-weight: 600;
   color: #545454;
@@ -295,15 +295,15 @@ h2 {
   z-index: 1;
   font-size: 22px;
   font-weight: bolder;
-  background-color: var(--white-color);
+  background-color: var(--white);
   padding: 7px;
   border-radius: 50%;
-  border: 2px solid var(--black-color);
+  border: 2px solid var(--black);
 }
 
 .arrow i:hover {
-  color: var(--white-color);
-  background-color: var(--black-color);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .popularlocation-content {
@@ -334,13 +334,13 @@ h2 {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: var(--white-color);
+  background-color: var(--white);
   padding: 7px;
   border-radius: 50%;
 }
 
 .popularlocation-content-block h4 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 3px;
@@ -360,7 +360,7 @@ h2 {
 }
 
 .popularlocation-content-block .popularity li {
-  font-size: var(--TripSans-typo);
+  font-size: var(--TripSans);
   margin-right: 1px;
   width: 10px;
   height: 10px;
@@ -370,24 +370,24 @@ h2 {
 }
 
 .popularlocation-content-block .popularity li:last-child {
-  background-color: var(--white-color);
+  background-color: var(--white);
   border: 1px solid #00AA6C;
 }
 
 .popularlocation-content-block .popularity p {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 12px;
   padding-bottom: 5px;
 }
 
 .popularlocation-content-block p {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 14px;
   line-height: 20px;
 }
 
 .popularlocation-content-block p span {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 16px;
 }
 
@@ -401,12 +401,12 @@ h2 {
 }
 
 .geniale-title h3 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 24px;
 }
 
 .geniale-title a {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 16px;
   font-weight: 600;
   color: #545454;
@@ -426,15 +426,15 @@ h2 {
   z-index: 1;
   font-size: 22px;
   font-weight: bolder;
-  background-color: var(--white-color);
+  background-color: var(--white);
   padding: 7px;
   border-radius: 50%;
-  border: 2px solid var(--black-color);
+  border: 2px solid var(--black);
 }
 
 .arrow-2 i:hover {
-  color: var(--white-color);
-  background-color: var(--black-color);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .geniale-container-content {
@@ -466,13 +466,13 @@ h2 {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: var(--white-color);
+  background-color: var(--white);
   padding: 7px;
   border-radius: 50%;
 }
 
 .geniale-container-block h4 {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 3px;
@@ -492,7 +492,7 @@ h2 {
 }
 
 .geniale-container-block .popularity li {
-  font-size: var(--TripSans-typo);
+  font-size: var(--TripSans);
   margin-right: 1px;
   width: 10px;
   height: 10px;
@@ -502,24 +502,24 @@ h2 {
 }
 
 .geniale-container-block .popularity li:last-child {
-  background-color: var(--white-color);
+  background-color: var(--white);
   border: 1px solid #00AA6C;
 }
 
 .geniale-container-block .popularity p {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 12px;
   padding-bottom: 5px;
 }
 
 .geniale-container-block p {
-  font-family: var(--TripSans-typo);
+  font-family: var(--TripSans);
   font-size: 14px;
   line-height: 20px;
 }
 
 .geniale-container-block p span {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
   font-size: 16px;
 }
 
@@ -531,8 +531,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-  background-color: var(--pink-color);
-  border-top: 1px solid black;
+  background-color: var(--pink);
+  border-top: 1px solid --black;
 }
 
 .footer-content {
@@ -553,5 +553,5 @@ h2 {
 }
 
 .footer-content p span {
-  font-family: var(--TripSansMedium-typo);
+  font-family: var(--TripSansMedium);
 }
