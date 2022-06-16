@@ -1,11 +1,278 @@
 @import url("variables.css");
 @import url("general.css");
-@import url("header.css");
-@import url("main.css");
-@import url("footer.css");
+
+/* -------------------------------- */
+/* ---------- HEADER -------------- */
+/* -------------------------------- */
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;;
+  height: 80px;
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  z-index: 1000;
+}
+
+.header-container--logo {
+  order: 2;
+}
+
+.header-container--logo img {
+  width: 140px;
+  height: 35px;
+  margin-right: 30px;
+}
+
+.header-container--search {
+  order: 3;
+}
+
+.header-container--search input {
+  display: none;
+}
+
+.header-container--search .small-search {
+  font-size: 25px;
+  margin-right: 30px;
+}
+
+.header-container--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  order: 1;
+}
+
+.header-container--nav .big-nav {
+  display: none;
+} 
+
+.header-container--nav .small-nav {
+  font-size: 25px;
+}
 
 
-/* SECTION : LES IMMANQUABLES ------------------------------------ */
+/* -------------------------------- */
+/* ----------- MAIN --------------- */
+/* -------------------------------- */
+
+.main-container {
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1 {
+    font-family: var(--TripSansMedium);
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    padding-left: 24px;
+}
+  
+h1 span {
+    color: var(--pink);
+}
+  
+.main-container--list {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.main-container--list button {
+  font-family: var(--TripSansMedium);
+  font-size: 16px;
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.main-container--list button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.main-container--list > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 150px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+
+}
+  
+  
+.main-container--list > div:hover {
+    color: white;
+    background-color: var(--black);
+}
+  
+.pictures {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+.pictures a {
+    position: absolute;
+    left: 20px;
+    bottom: 17px;
+    color: var(--white);
+    padding: 10px;
+    background-color: var(--black);
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: var(--TripSansMedium);
+}
+  
+.pictures a:hover {
+    background-color: var(--grey);
+}
+  
+.pictures a i {
+    font-size: 12px;
+}
+  
+.pictures img {
+    object-fit: cover;
+    height: 432px;
+    width: 658px;
+    opacity: 100%;
+    transition: opacity 1s;
+}
+  
+.pictures img:hover {
+    opacity:80%;
+}
+  
+.pictures-column {
+    display: flex;
+    flex-direction: column;
+}
+  
+.pictures-column img {
+    height: 215px;
+    width: 475px;
+    margin-bottom: 2px;
+    object-fit: cover;
+}
+  
+.links {
+    margin-bottom: 39px;
+    font-family: var(--TripSans);
+    font-size: 12px;
+    line-height: 12px;;
+    color: var(--grey);
+}
+  
+.links a:hover {
+    text-decoration: underline;
+}
+  
+.links span {
+    margin: 0 3px;
+    padding-top: 2px;
+    font-weight: 600;
+    font-size: 10px;
+}
+  
+.bloc-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+ 
+.description {
+    width: 657px;
+    padding-right: 140px;
+}
+  
+.description h2 {
+    font-family: var(--TripSansMedium);
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+  
+.description p {
+    font-family: var(--Georgia);
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey);
+}
+  
+.organisation {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.paris {
+    background-color: var(--pink);
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+  
+.paris h2 {
+    font-family: var(--TripSansMedium);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+  
+.paris p {
+    font-family: var(--TripSansMedium);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+  
+.paris a {
+    display: block;
+    font-family: var(--TripSans);
+    font-size: 13px;
+    font-weight: 100;
+    color: var(--white);
+    padding: 20px;
+    background-color: var(--grey);
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+.paris-map img {
+    object-fit: cover;
+    width: 440px;
+    height: 150px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* -------------------------------- */
+/* --- SECTION LES IMMANQUABLES --- */
+/* -------------------------------- */
+
 
 h2 {
   font-family: var(--TripSansMedium);
@@ -187,15 +454,15 @@ h2 {
   padding-bottom: 5px;
 }
 
-
 .unmissable-right-block p span {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 18px;
 }
 
-
-/* TRENDS OF FORUMS ------------------------------------ */
+/* -------------------------------- */
+/* --- SECTION TRENDS OF FORUMS --- */
+/* -------------------------------- */
 
 
 .tendance-title {
@@ -270,8 +537,9 @@ h2 {
   padding-right: 5px;
 }
 
-
-/* RENT A FLAT FOR YOUR NEXT GETAWAY ----------------------------- */
+/* -------------------------------- */
+/* ------ RENT A APPARTEMENT ------ */
+/* -------------------------------- */
 
 
 .popularlocation-title {
@@ -322,7 +590,6 @@ h2 {
   flex-direction: row;
   overflow-x: auto;
 }
-
 
 .popularlocation-content-block {
   display: flex;
@@ -402,7 +669,10 @@ h2 {
   font-size: 16px;
 }
 
-/* PARIS GENIALE ----------------------------------------- */
+/* -------------------------------- */
+/* --------- PARIS GENIALE -------- */
+/* -------------------------------- */
+
 
 .geniale-title {
   display: flex;
@@ -423,7 +693,6 @@ h2 {
   color: #545454;
   text-decoration: underline;
 }
-
 
 .geniale-container {
   position: relative;
@@ -534,7 +803,9 @@ h2 {
   font-size: 16px;
 }
 
-/* FOOTER ------------------------------------------ */
+/* -------------------------------- */
+/* ------------ FOOTER ------------ */
+/* -------------------------------- */
 
 .footer-container {
   height: 156px;
@@ -565,4 +836,111 @@ h2 {
 
 .footer-content p span {
   font-family: var(--TripSansMedium);
+}
+
+/* -------------------------------- */
+/* -------- MEDIA QUERIES --------- */
+/* -------------------------------- */
+
+@media (min-width: 768px) {
+
+/* -------------------------------- */
+/* ---------- HEADER -------------- */
+/* -------------------------------- */
+
+.header-container--logo {
+  order: 1;
+}
+
+.header-container--search {
+  order: 2;
+}
+
+.header-container--nav {
+  order: 3;
+}
+
+.header-container--logo img {
+  width: 193px;
+  height: 40px;
+  margin-right: 15px;
+  margin-left: 25px;
+}
+
+.header-container--search input {
+  display: flex;
+  width: 183px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px 20px 10px 40px;
+  background-image: url('../img/search.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+  .header-container--search .small-search {
+    display: none;
+  }
+
+  .header-container--nav .small-nav {
+    display: none;
+  }
+
+  .header-container--nav .big-nav {
+    display: flex;
+  }
+
+  .header-container--nav .big-nav span {
+    display: none;
+  }
+
+  .header-container--nav a {
+    font-family: var(--TripSans);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .header-container--nav i {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+
+  .header-container--nav a:hover {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .header-container--nav a:last-child {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 13px 15px;
+    border-radius: 20px;
+    font-family: var(--TripSans);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 1s;
+  }
+
+  .header-container--nav a:last-child:hover {
+    background-color: var(--grey);
+  }
+
+/* -------------------------------- */
+/* ----------- MAIN --------------- */
+/* -------------------------------- */
+
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1184px) {
+
 }

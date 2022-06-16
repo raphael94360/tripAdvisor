@@ -14,18 +14,25 @@
 
   <header>
     <div class="header-container">
-      <div>
+      <nav class="header-container--nav">
+        <a href="#" class="small-nav"><i class="fa-solid fa-bars"></i></a>
+        <a href="#" class="big-nav"><i class="fa-solid fa-pen"></i><span>Avis</span></a>
+        <a href="#" class="big-nav"><i class="fa-regular fa-heart"></i><span>Voyages</span></a>
+        <a href="#" class="big-nav"><i class="fa-regular fa-bell"></i><span>Alertes</span></a>
+        <a href="#" class="big-nav">Connectez-vous</a>
+      </nav>
+      <div class="header-container--logo">
         <img src="./assets/img/logo.svg" class="logo" alt="logo TripAdvisor"/>
       </div>
-        <input type="search"/>
-      <nav>
-        <a href="#"> <i class="fa-solid fa-pen"></i> Avis </a>
-        <a href="#"> <i class="fa-regular fa-heart"></i> Voyages </a>
-        <a href="#"> <i class="fa-regular fa-bell"></i> Alertes </a>
-        <a href="#"> Connectez-vous </a>
-      </nav>
+      <div class="header-container--search">
+        <a href="#" class="small-search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+        <input type="search" class="big-search"/>
+      </div>
+      
     </div>
   </header>
+
+  <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
 
   <main>
 
@@ -33,13 +40,13 @@
 
       <h1> <span> Explorez </span> Paris </h1>
 
-      <div class="links-list">
-        <a href="#"> Hôtels <i class="fa-solid fa-bed"></i> </a>
-        <a href="#"> Locations de vacances <i class="fa-solid fa-house"></i> </a>
-        <a href="#"> Activités <i class="fa-solid fa-person-walking"></i> </a>
-        <a href="#"> Restaurants <i class="fa-solid fa-utensils"></i> </a>
-        <a href="#"> Forums de voyage <i class="fa-regular fa-comment"></i> </a>
-        <a href="#"> Plus <i class="fa-solid fa-ellipsis"></i> </a>
+      <div class="main-container--list">
+        <div><button> Hôtels </button><i class="fa-solid fa-bed"></i></div>
+        <div><button>Locations de vacances</button><i class="fa-solid fa-house"></i></div>
+        <div><button>Activités</button><i class="fa-solid fa-person-walking"></i></div>
+        <div><button>Restaurants</button><i class="fa-solid fa-utensils"></i></div>
+        <div><button>Forums de voyage</button><i class="fa-regular fa-comment"></i></div>
+        <div><button>Plus</button><i class="fa-solid fa-ellipsis"></i></div>
       </div>
   
       <div class="pictures">
