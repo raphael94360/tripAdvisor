@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Trip Sans';
-    src: url('../fonts/TripSans-Regular.woff2') format('woff2'),
-        url('../fonts/TripSans-Regular.woff') format('woff');
+    src: url('../assets/fonts/TripSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/TripSans-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Trip Sans Medium';
-    src: url('../fonts/TripSans-Medium.woff2') format('woff2'),
-        url('../fonts/TripSans-Medium.woff') format('woff');
+    src: url('../assets/fonts/TripSans-Medium.woff2') format('woff2'),
+        url('../assets/fonts/TripSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: TripSans-VF;
-    src: url('../fonts/TripSans-VF.woff2') format('woff2');
+    src: url('../assets/fonts/TripSans-VF.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
