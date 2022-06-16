@@ -6,8 +6,8 @@
 - Position
 - FontAwesome
 - Fonts de TripAdvisor
-- Variables
-- Imports CSS
+- Sass
+- BEM méthodologie
 
 
-Demo at this page (https://www.raphael-pinet.fr/tripadvisor).
+
