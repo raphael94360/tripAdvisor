@@ -1,0 +1,24 @@
+{
+  "name": "tripAdvisor",
+  "version": "1.0.0",
+  "description": "## Projet d'intégration d'une page de TripAdvisor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphael94360/tripAdvisor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphael94360/tripAdvisor/issues"
+  },
+  "homepage": "https://github.com/raphael94360/tripAdvisor#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}
