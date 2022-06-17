@@ -142,7 +142,7 @@ table {
   top: 0;
   left: 0;
   right: 0;
-  height: 8rem;
+  height: 6rem;
   max-width: 50rem;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -199,8 +199,6 @@ table {
   display: flex;
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
-  overflow: hidden;
-  overflow-x: auto;
 }
 .main-container--list > div {
   display: flex;
@@ -240,7 +238,8 @@ table {
 .main-container--pictures-left img {
   object-fit: cover;
   object-position: center;
-  max-width: 30rem;
+  width: 31.25rem;
+  max-height: 17.25rem;
 }
 .main-container--pictures-left a {
   position: absolute;
@@ -333,6 +332,7 @@ table {
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-bottom: 5rem;
 }
 .section-container h2 {
   font-family: var(--TripSansMedium);
@@ -382,8 +382,6 @@ table {
   display: flex;
   flex-direction: row;
   max-width: 40rem;
-  overflow: hidden;
-  overflow-x: auto;
 }
 .section-container--unmissable-right .block {
   display: flex;
@@ -447,374 +445,155 @@ table {
   display: flex;
   flex-direction: column;
   position: relative;
+  max-width: 22rem;
+  margin-right: 0.5rem;
 }
 .section-container--popular .block img {
-  max-width: 25rem;
-}
-
-/* --- SECTION TRENDS OF FORUMS --- */
-.tendance-container {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  overflow: hidden;
-  overflow-x: auto;
-}
-.tendance-container--title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-.tendance-container--title h3 {
-  font-family: var(--TripSansMedium);
-  font-size: 1.3rem;
-}
-.tendance-container--title a {
-  font-family: var(--TripSansMedium);
-  font-size: 1rem;
-  text-decoration: underline;
-  color: #545454;
-}
-.tendance-container--content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 5rem;
-}
-.tendance-container--content .block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 22rem;
-  min-height: 7rem;
-  padding: 1.5rem;
-  margin-right: 0.5rem;
-  border-radius: 1rem;
-  background-color: #faf1ed;
-  flex-shrink: 0;
-}
-.tendance-container--content .block:last-child {
-  margin-right: 0;
-}
-.tendance-container--content p {
-  font-family: var(--TripSansMedium);
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  height: 16.375rem;
   margin-bottom: 0.5rem;
 }
-.tendance-container--content .profil {
+.section-container--popular .block i {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 0.7rem;
+  right: 0.7rem;
+  background-color: var(--white);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+.section-container--popular .block h4 {
+  font-family: var(--TripSansMedium);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+.section-container--popular .block .popularity {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 0.2rem;
 }
-.tendance-container--content .profil img {
-  width: 3rem;
-  height: 3rem;
+.section-container--popular .block .popularity ul {
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.section-container--popular .block .popularity ul li {
+  font-size: var(--TripSans);
+  margin-right: 0.1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #00AA6C;
   border-radius: 50%;
+  border: 0.1rem solid #00AA6C;
+}
+.section-container--popular .block .popularity p {
+  font-size: var(--TripSans);
+  font-size: 0.75rem;
+  padding-bottom: 0.3rem;
+}
+.section-container--popular .block p {
+  font-family: var(--TripSans);
+  font-size: 0.9rem;
+}
+.section-container--popular .block p span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+.section-container--geniale {
+  display: flex;
+}
+.section-container--geniale .block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 22rem;
   margin-right: 0.5rem;
 }
-.tendance-container--content .profil p {
-  font-family: var(--TripSans);
-  font-size: 1rem;
+.section-container--geniale .block img {
+  width: 17.675rem;
+  height: 17.675rem;
+  margin-bottom: 0.5rem;
 }
-.tendance-container--content .profil p span {
-  font-family: var(--TripSansMedium);
-  font-size: 1rem;
-  padding-right: 0.5rem;
-}
-
-/* ------ RENT A APPARTEMENT ------ */
-.popularlocation-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.popularlocation-title h3 {
-  font-family: var(--TripSansMedium);
-  font-size: 24px;
-}
-
-.popularlocation-title a {
-  font-family: var(--TripSans);
-  font-size: 16px;
-  font-weight: 600;
-  color: #545454;
-  text-decoration: underline;
-}
-
-.popularlocation-container {
-  position: relative;
-  margin-bottom: 84px;
-}
-
-.arrow i {
+.section-container--geniale .block i {
   position: absolute;
-  top: 120px;
-  right: -20px;
-  z-index: 1;
-  font-size: 22px;
-  font-weight: bolder;
+  font-size: 1.3rem;
+  top: 0.7rem;
+  right: 0.7rem;
   background-color: var(--white);
-  padding: 7px;
-  border-radius: 50%;
-  border: 2px solid var(--black);
-}
-
-.arrow i:hover {
-  color: var(--white);
-  background-color: var(--black);
-}
-
-.popularlocation-content {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-}
-
-.popularlocation-content-block {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-right: 17px;
-}
-
-.popularlocation-content-block:last-child {
-  margin-right: 0px;
-}
-
-.popularlocation-content-block img {
-  width: 364px;
-  height: 272px;
-  margin-bottom: 8px;
-}
-
-.popularlocation-content-block i {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: var(--white);
-  padding: 7px;
+  padding: 0.7rem;
   border-radius: 50%;
 }
-
-.popularlocation-content-block h4 {
+.section-container--geniale .block h4 {
   font-family: var(--TripSansMedium);
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 3px;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
 }
-
-.popularlocation-content-block .popularity {
+.section-container--geniale .block .popularity {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 0.2rem;
 }
-
-.popularlocation-content-block .popularity ul {
-  margin-right: 7px;
-  margin-bottom: 3px;
+.section-container--geniale .block .popularity ul {
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: row;
 }
-
-.popularlocation-content-block .popularity li {
+.section-container--geniale .block .popularity ul li {
   font-size: var(--TripSans);
-  margin-right: 1px;
-  width: 10px;
-  height: 10px;
+  margin-right: 0.1rem;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: #00AA6C;
   border-radius: 50%;
-  border: 1px solid #00AA6C;
+  border: 0.1rem solid #00AA6C;
 }
-
-.popularlocation-content-block .popularity li:last-child {
-  background-color: var(--white);
-  border: 1px solid #00AA6C;
-}
-
-.popularlocation-content-block .popularity p {
-  font-family: var(--TripSans);
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-
-.popularlocation-content-block p {
-  font-family: var(--TripSans);
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.popularlocation-content-block p span {
-  font-family: var(--TripSansMedium);
-  font-size: 16px;
-}
-
-/* -------------------------------- */
-/* --------- PARIS GENIALE -------- */
-/* -------------------------------- */
-.geniale-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.geniale-title h3 {
-  font-family: var(--TripSansMedium);
-  font-size: 24px;
-}
-
-.geniale-title a {
-  font-family: var(--TripSans);
-  font-size: 16px;
-  font-weight: 600;
-  color: #545454;
-  text-decoration: underline;
-}
-
-.geniale-container {
-  position: relative;
-  margin-bottom: 106px;
-}
-
-.arrow-2 i {
-  position: absolute;
-  top: 120px;
-  right: -20px;
-  z-index: 1;
-  font-size: 22px;
-  font-weight: bolder;
-  background-color: var(--white);
-  padding: 7px;
-  border-radius: 50%;
-  border: 2px solid var(--black);
-}
-
-.arrow-2 i:hover {
-  color: var(--white);
-  background-color: var(--black);
-}
-
-.geniale-container-content {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  overflow-x: auto;
-}
-
-.geniale-container-block {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  max-width: 271px;
-  margin-right: 15px;
-}
-
-.geniale-container-block:last-child {
-  margin-right: 0px;
-}
-
-.geniale-container-block img {
-  width: 271px;
-  height: 268px;
-  margin-bottom: 5px;
-}
-
-.geniale-container-block i {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: var(--white);
-  padding: 7px;
-  border-radius: 50%;
-}
-
-.geniale-container-block h4 {
-  font-family: var(--TripSansMedium);
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 3px;
-}
-
-.geniale-container-block .popularity {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.geniale-container-block .popularity ul {
-  margin-right: 7px;
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: row;
-}
-
-.geniale-container-block .popularity li {
+.section-container--geniale .block .popularity p {
   font-size: var(--TripSans);
-  margin-right: 1px;
-  width: 10px;
-  height: 10px;
-  background-color: #00AA6C;
-  border-radius: 50%;
-  border: 1px solid #00AA6C;
+  font-size: 0.75rem;
+  padding-bottom: 0.3rem;
 }
-
-.geniale-container-block .popularity li:last-child {
-  background-color: var(--white);
-  border: 1px solid #00AA6C;
-}
-
-.geniale-container-block .popularity p {
+.section-container--geniale .block p {
   font-family: var(--TripSans);
-  font-size: 12px;
-  padding-bottom: 5px;
+  font-size: 0.9rem;
+}
+.section-container--geniale .block p span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.3rem;
 }
 
-.geniale-container-block p {
-  font-family: var(--TripSans);
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.geniale-container-block p span {
-  font-family: var(--TripSansMedium);
-  font-size: 16px;
-}
-
-/* -------------------------------- */
 /* ------------ FOOTER ------------ */
-/* -------------------------------- */
 .footer-container {
-  height: 156px;
+  height: 9.75rem;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 6.25rem;
   background-color: var(--pink);
-  border-top: 1px solid --black;
+  border-top: 0.1rem solid --black;
 }
-
-.footer-content {
+.footer-container--content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 40px 0;
 }
-
-.footer-content img {
-  width: 50px;
-  height: 50px;
+.footer-container img {
+  width: 2.5rem;
+  height: 3.125rem;
 }
-
-.footer-content p {
-  padding: 20px 0;
+.footer-container p {
+  padding: 1.25rem 0;
 }
-
-.footer-content p span {
+.footer-container p span {
   font-family: var(--TripSansMedium);
 }
 
