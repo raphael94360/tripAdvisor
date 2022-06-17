@@ -569,6 +569,67 @@ table {
   line-height: 1.3rem;
 }
 
+/* --------- TENDANCE ------------- */
+.tendance-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.tendance-container--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.tendance-container--title h3 {
+  font-family: var(--TripSansMedium);
+  font-size: 1.5rem;
+}
+.tendance-container--title a {
+  font-family: var(--TripSansMedium);
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.tendance-container--content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.tendance-container--content .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+  min-width: 22rem;
+  height: 9rem;
+  background-color: #faf1ed;
+  padding: 1.7rem 1.5rem;
+  border-radius: 1rem;
+}
+.tendance-container--content .block p {
+  font-family: var(--TripSansMedium);
+  font-size: 1.1rem;
+}
+.tendance-container--content .block .profil {
+  display: flex;
+  align-items: center;
+}
+.tendance-container--content .block .profil img {
+  max-width: 2.3rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.tendance-container--content .block .profil p {
+  font-family: var(--TripSans);
+  font-size: 1rem;
+}
+.tendance-container--content .block .profil p span {
+  font-weight: bold;
+}
+
 /* ------------ FOOTER ------------ */
 .footer-container {
   height: 9.75rem;
