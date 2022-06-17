@@ -1,8 +1,8 @@
 /* GENERAL ----------------------------------------- */
 * {
   box-sizing: border-box;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   font-size: 62.5%;
 }
 
@@ -14,12 +14,6 @@ h1, h2, h3, h4 {
 a {
   text-decoration: none;
   color: black;
-}
-
-.container {
-  width: 390px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*# sourceMappingURL=general.css.map */
