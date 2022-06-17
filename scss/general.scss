@@ -1,11 +1,10 @@
 /* GENERAL ----------------------------------------- */
 
-body {
-    background-color: white;
-    font-family: "Trip Sans", sans-serif;
+* {
     box-sizing: border-box;
     margin-left: 0px;
     margin-right: 0px;
+    font-size: 62.5%;
   }
 
   h1, h2, h3, h4 {
@@ -19,7 +18,7 @@ body {
   }
   
   .container {
-    width: 1135px;
+    width: 390px;
     margin-left: auto;
     margin-right: auto;
   }
