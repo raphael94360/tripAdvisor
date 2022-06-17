@@ -301,10 +301,6 @@
       display: flex;
       flex-direction: row;
       max-width: 40rem;
-      // padding-left: 2rem;
-      // padding-right: 2rem;
-      // overflow: hidden;
-      // overflow-x: auto;
     }
 
     &-right .block {
@@ -322,10 +318,11 @@
 
         i {
           position: absolute;
-          top: 1.5rem;
-          right: 2rem;
+          font-size: 1.3rem;
+          top: 0.7rem;
+          right: 0.7rem;
           background-color: var(--white);
-          padding: 7px;
+          padding: 0.7rem;
           border-radius: 50%;
         }
 
@@ -370,7 +367,7 @@
           font-size: 0.9rem;
 
         }
-      }
+    }
   }
 
   &--popular {
@@ -555,7 +552,6 @@
     h3 {
       font-family: var(--TripSansMedium);
       font-size: 1.5rem;
-      
     }
 
     a {
@@ -563,7 +559,6 @@
       font-size: 1rem;
       text-decoration: underline;
     }
-
   }
 
   &--content {
@@ -606,9 +601,10 @@
           font-weight: bold;
         }
       }
+
     }
-    
   }
+
 }
 
 /* ------------ FOOTER ------------ */
