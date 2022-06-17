@@ -240,6 +240,7 @@ table {
 .main-container--pictures-left img {
   object-fit: cover;
   object-position: center;
+  max-width: 30rem;
 }
 .main-container--pictures-left a {
   position: absolute;
@@ -330,21 +331,33 @@ table {
 .section-container {
   max-width: 50rem;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .section-container h2 {
   font-family: var(--TripSansMedium);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bolder;
   margin-bottom: 2rem;
-  padding: 0 2rem;
+}
+.section-container--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.section-container--title h3 {
+  font-family: var(--TripSansMedium);
+  font-size: 1.45rem;
+}
+.section-container--title a {
+  font-family: var(--TripSansMedium);
+  font-size: 1.1rem;
+  text-decoration: underline;
 }
 .section-container--unmissable {
   display: flex;
   flex-direction: column;
-}
-.section-container--unmissable-left {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .section-container--unmissable-left h3 {
   font-family: var(--TripSansMedium);
@@ -369,8 +382,6 @@ table {
   display: flex;
   flex-direction: row;
   max-width: 40rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   overflow: hidden;
   overflow-x: auto;
 }
@@ -429,83 +440,91 @@ table {
   font-family: var(--TripSans);
   font-size: 0.9rem;
 }
+.section-container--popular {
+  display: flex;
+}
+.section-container--popular .block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.section-container--popular .block img {
+  max-width: 25rem;
+}
 
 /* --- SECTION TRENDS OF FORUMS --- */
-.tendance-title {
+.tendance-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.tendance-container--title {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
-
-.tendance-title h3 {
+.tendance-container--title h3 {
   font-family: var(--TripSansMedium);
-  font-size: 24px;
+  font-size: 1.3rem;
 }
-
-.tendance-title a {
+.tendance-container--title a {
   font-family: var(--TripSansMedium);
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: underline;
   color: #545454;
 }
-
-.tendance-content {
+.tendance-container--content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 86px;
+  margin-bottom: 5rem;
 }
-
-.tendance-content-block {
+.tendance-container--content .block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 364px;
-  height: 120px;
-  padding: 25px;
-  margin-right: 15px;
-  border-radius: 15px;
+  width: 22rem;
+  min-height: 7rem;
+  padding: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
   background-color: #faf1ed;
+  flex-shrink: 0;
 }
-
-.tendance-content-block:last-child {
-  margin-right: 0px;
+.tendance-container--content .block:last-child {
+  margin-right: 0;
 }
-
-.tendance-content-block p {
+.tendance-container--content p {
   font-family: var(--TripSansMedium);
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
 }
-
-.tendance-content-block-profil {
+.tendance-container--content .profil {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-.tendance-content-block-profil img {
-  width: 40px;
-  height: 40px;
+.tendance-container--content .profil img {
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  margin-right: 7px;
+  margin-right: 0.5rem;
 }
-
-.tendance-content-block-profil p {
+.tendance-container--content .profil p {
   font-family: var(--TripSans);
-  font-size: 16px;
+  font-size: 1rem;
 }
-
-.tendance-content-block-profil p span {
+.tendance-container--content .profil p span {
   font-family: var(--TripSansMedium);
-  font-size: 16px;
-  padding-right: 5px;
+  font-size: 1rem;
+  padding-right: 0.5rem;
 }
 
-/* -------------------------------- */
 /* ------ RENT A APPARTEMENT ------ */
-/* -------------------------------- */
 .popularlocation-title {
   display: flex;
   flex-direction: row;

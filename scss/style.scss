@@ -91,7 +91,6 @@
 
 /* ----------- MAIN --------------- */
 
-
 .main-container {
   max-width: 50rem;
   margin: 0 auto;
@@ -162,6 +161,7 @@
   &--pictures-left img {
     object-fit: cover;
     object-position: center;
+    max-width: 30rem;
   }
 
   &--pictures-left a {
@@ -268,13 +268,32 @@
 .section-container {
   max-width: 50rem;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   h2 {
     font-family: var(--TripSansMedium);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bolder;
     margin-bottom: 2rem;
-    padding: 0 2rem;
+  }
+
+  &--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8rem;
+
+    h3 {
+      font-family: var(--TripSansMedium);
+      font-size: 1.45rem;
+    }
+
+    a {
+      font-family: var(--TripSansMedium);
+      font-size: 1.1rem;
+      text-decoration: underline;
+    }
   }
 
   &--unmissable {
@@ -282,8 +301,8 @@
     flex-direction: column;
 
     &-left {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      // padding-left: 2rem;
+      // padding-right: 2rem;
   
       h3 {
         font-family: var(--TripSansMedium);
@@ -312,8 +331,8 @@
       display: flex;
       flex-direction: row;
       max-width: 40rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      // padding-left: 2rem;
+      // padding-right: 2rem;
       overflow: hidden;
       overflow-x: auto;
     }
@@ -382,89 +401,110 @@
 
         }
       }
-    }
   }
+
+  &--popular {
+    display: flex;
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      img {
+        max-width: 25rem;
+      }
+    }
+
+  }
+
+}
 
 /* --- SECTION TRENDS OF FORUMS --- */
 
+.tendance-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+  overflow-x: auto;
 
+  &--title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 
-.tendance-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
+    h3 {
+      font-family: var(--TripSansMedium);
+      font-size: 1.3rem;
+    }
+
+    a {
+      font-family: var(--TripSansMedium);
+      font-size: 1rem;
+      text-decoration: underline;
+      color: #545454;
+    }
+  }
+
+  &--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    .block {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 22rem;
+     min-height: 7rem;
+     padding: 1.5rem;
+     margin-right: 0.5rem;
+     border-radius: 1rem;
+     background-color: #faf1ed;
+     flex-shrink: 0;
+    } 
+    
+    .block:last-child {
+      margin-right: 0;
+    }
+
+    p {
+      font-family: var(--TripSansMedium);
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profil {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .profil img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    .profil p {
+      font-family: var(--TripSans);
+      font-size: 1rem;
+    }
+
+    .profil p span {
+      font-family: var(--TripSansMedium);
+      font-size: 1rem;
+      padding-right: 0.5rem;
+    }
+  }
 }
 
-.tendance-title h3 {
-  font-family: var(--TripSansMedium);
-  font-size: 24px;
-}
-
-.tendance-title a {
-  font-family: var(--TripSansMedium);
-  font-size: 16px;
-  text-decoration: underline;
-  color: #545454;
-}
-
-.tendance-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 86px;
-}
-
-.tendance-content-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 364px;
-  height: 120px;
-  padding: 25px;
-  margin-right: 15px;
-  border-radius: 15px;
-  background-color: #faf1ed;
-}
-
-.tendance-content-block:last-child {
-  margin-right: 0px
-}
-
-.tendance-content-block p {
-  font-family: var(--TripSansMedium);
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.tendance-content-block-profil {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.tendance-content-block-profil img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 7px;
-}
-
-.tendance-content-block-profil p {
-  font-family: var(--TripSans);
-  font-size: 16px;
-}
-
-.tendance-content-block-profil p span {
-  font-family: var(--TripSansMedium);
-  font-size: 16px;
-  padding-right: 5px;
-}
-
-/* -------------------------------- */
 /* ------ RENT A APPARTEMENT ------ */
-/* -------------------------------- */
-
 
 .popularlocation-title {
   display: flex;
