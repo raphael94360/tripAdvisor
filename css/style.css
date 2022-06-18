@@ -150,32 +150,121 @@ table {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
   background-color: var(--white);
   z-index: 1000;
 }
 .header-container--nav {
   order: 1;
 }
+@media (min-width: 768px) {
+  .header-container--nav {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header-container--nav a {
+  padding: 0.6rem;
+}
+.header-container--nav a:last-child {
+  font-family: var(--TripSansMedium);
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0.7rem 0.8rem;
+  color: var(--white);
+  border-radius: 2rem;
+  margin-right: 0;
+  background-color: var(--black);
+  transition: background-color 1s;
+}
+.header-container--nav a:hover {
+  background-color: #eee;
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+.header-container--nav a:last-child:hover {
+  padding: 0.7rem 0.8rem;
+  border-radius: 2rem;
+  background-color: var(--grey);
+}
 .header-container--nav .big-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-container--nav .big-nav {
+    display: flex;
+    margin-right: 0.4rem;
+    font-size: 1.1rem;
+  }
+}
+.header-container--nav .big-nav span {
   display: none;
 }
 .header-container--nav .small-nav i {
   font-size: 1.5rem;
 }
+@media (min-width: 768px) {
+  .header-container--nav .small-nav i {
+    display: none;
+  }
+}
 .header-container--logo {
   order: 2;
+}
+@media (min-width: 768px) {
+  .header-container--logo {
+    order: 1;
+  }
 }
 .header-container--logo img {
   width: 10rem;
 }
+@media (min-width: 768px) {
+  .header-container--logo img {
+    min-width: 11.5rem;
+    margin-right: 0.5rem;
+  }
+}
 .header-container--search {
   order: 3;
 }
+@media (min-width: 768px) {
+  .header-container--search {
+    order: 2;
+  }
+}
 .header-container--search input {
+  font-family: var(--TripSans);
+  font-size: 0.9rem;
   display: none;
+  min-width: 11rem;
+  min-height: 2.5rem;
+  padding: 0.3rem 0 0.3rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  border: 0.15rem solid #ddd;
+  background-image: url("../assets/img/search.png");
+  background-repeat: no-repeat;
+  background-position: 0.5rem;
+}
+@media (min-width: 768px) {
+  .header-container--search input {
+    display: flex;
+  }
+}
+.header-container--search input i {
+  font-size: 2rem;
 }
 .header-container--search .small-search {
   font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .header-container--search .small-search {
+    display: none;
+  }
 }
 
 /* ----------- MAIN --------------- */

@@ -21,41 +21,121 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
   background-color: var(--white);
   z-index: 1000;
 
   &--nav {
     order: 1; 
+    @include medium {
+      order: 3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &--nav a {
+    padding: 0.6rem;
+  }
+
+  &--nav a:last-child {
+    font-family: var(--TripSansMedium);
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.7rem 0.8rem;
+    color: var(--white);
+    border-radius: 2rem;
+    margin-right: 0;
+    background-color: var(--black);
+    transition: background-color 1s;
+  }
+
+  &--nav a:hover {
+    background-color: #eee;
+    padding: 0.6rem;
+    border-radius: 1rem;
+  }
+
+  &--nav a:last-child:hover {
+    padding: 0.7rem 0.8rem;
+    border-radius: 2rem;
+    background-color: var(--grey);
   }
 
   &--nav .big-nav {
+      display: none;
+      @include medium {
+        display: flex;
+        margin-right: 0.4rem;
+        font-size: 1.1rem;
+      }
+  }
+
+  &--nav .big-nav span {
       display: none;
   }
 
   &--nav .small-nav i {
       font-size: 1.5rem;
+      @include medium {
+        display: none;
+      }
   }
 
   &--logo {
     order: 2;
+    @include medium {
+      order: 1;
+    }
   }
 
   &--logo img {
     width: 10rem;
+    @include medium {
+      min-width: 11.5rem;
+      margin-right: 0.5rem;
+    }
   }
 
   &--search {
     order: 3;
+    @include medium {
+      order: 2;
+    }
   }
 
   &--search input {
+    font-family: var(--TripSans);
+    font-size: 0.9rem;
     display: none;
+    min-width: 11rem;
+    min-height: 2.5rem;
+    padding: 0.3rem 0 0.3rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    border: 0.15rem solid #ddd;
+    background-image: url("../assets/img/search.png");
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    @include medium {
+      display: flex;
+    }
+  }
+
+  &--search input i {
+    font-size: 2rem;
   }
 
   &--search .small-search {
      font-size: 1.5rem;
+     @include medium {
+      display: none;
+     }
   }
 }
+
 
 /* ----------- MAIN --------------- */
 
