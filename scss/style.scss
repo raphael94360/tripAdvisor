@@ -33,6 +33,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
     }
   }
 
@@ -161,8 +162,8 @@
     display: flex;
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
-    // overflow: hidden;
-    // overflow-x: auto;
+    overflow: hidden;
+
   }
 
   &--list > div {
@@ -349,10 +350,9 @@
   &--unmissable {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     &-left {
-      // padding-left: 2rem;
-      // padding-right: 2rem;
   
       h3 {
         font-family: var(--TripSansMedium);
@@ -386,6 +386,7 @@
     &-right .block {
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
         max-width: 350px;
         margin-right: 1rem;
         position: relative;
@@ -452,10 +453,12 @@
 
   &--popular {
     display: flex;
+    overflow: hidden;
 
     .block {
       display: flex;
       flex-direction: column;
+      flex-shrink: 0;
       position: relative;
       max-width: 22rem;
       margin-right: 0.5rem;
@@ -533,10 +536,12 @@
 
   &--geniale {
     display: flex;
+    overflow: hidden;
 
     .block {
       display: flex;
       flex-direction: column;
+      flex-shrink: 0;
       position: relative;
       max-width: 22rem;
       margin-right: 0.5rem;
@@ -645,6 +650,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 4rem;
+    overflow: hidden;
 
     .block {
       display: flex;

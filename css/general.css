@@ -16,4 +16,8 @@ a {
   color: black;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=general.css.map */
