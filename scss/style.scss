@@ -27,6 +27,9 @@
   @include large {
     max-width: 64rem;
   }
+  @include xlarge {
+    max-width: 80.25rem;
+  }
 
   &--nav {
     order: 1; 
@@ -36,7 +39,6 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-
     }
   }
 

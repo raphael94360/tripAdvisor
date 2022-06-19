@@ -163,6 +163,11 @@ table {
     max-width: 64rem;
   }
 }
+@media (min-width: 1184px) {
+  .header-container {
+    max-width: 80.25rem;
+  }
+}
 .header-container--nav {
   order: 1;
 }
