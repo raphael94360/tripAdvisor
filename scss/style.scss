@@ -485,12 +485,18 @@
       border: 0.1rem solid var(--black);
       background-color: var(--white);
       z-index: 2;
+      @include large {
+        top: 4rem;
+      }
     }
 
     &-left {
 
       @include medium {
         min-width: 14.5rem;
+      }
+      @include large {
+        width: 11.75rem;
       }
   
       h3 {
@@ -532,6 +538,10 @@
         @include medium {
           width: 11.5rem;
         }
+        @include large {
+          width: 14.125rem;
+          // height: 10.5rem;
+        }
 
         img {
           width: 350px;
@@ -540,6 +550,10 @@
           @include medium {
             width: 11.5rem;
             height: 8.75rem;
+          }
+          @include large {
+            width: 14.125rem;
+            height: 10.5rem;
           }
         }
 
@@ -829,6 +843,7 @@
   position: relative;
   @include large {
     max-width: 64rem;
+    padding-right: 2rem;
   }
 
   &--icon {
@@ -841,6 +856,9 @@
     border: 0.1rem solid var(--black);
     background-color: var(--white);
     z-index: 2;
+    @include large {
+      display: none;
+    }
   }
 
   &--title {
@@ -880,6 +898,9 @@
       border-radius: 1rem;
       @include medium {
         min-width: 17.875rem;
+      }
+      @include large {
+        margin-right: 1rem;
       }
 
       p {

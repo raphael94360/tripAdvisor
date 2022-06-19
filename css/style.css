@@ -625,9 +625,19 @@ table {
   background-color: var(--white);
   z-index: 2;
 }
+@media (min-width: 1024px) {
+  .section-container--unmissable-icon i {
+    top: 4rem;
+  }
+}
 @media (min-width: 768px) {
   .section-container--unmissable-left {
     min-width: 14.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-container--unmissable-left {
+    width: 11.75rem;
   }
 }
 .section-container--unmissable-left h3 {
@@ -667,6 +677,11 @@ table {
     width: 11.5rem;
   }
 }
+@media (min-width: 1024px) {
+  .section-container--unmissable-right .block {
+    width: 14.125rem;
+  }
+}
 .section-container--unmissable-right .block img {
   width: 350px;
   height: 263px;
@@ -676,6 +691,12 @@ table {
   .section-container--unmissable-right .block img {
     width: 11.5rem;
     height: 8.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-container--unmissable-right .block img {
+    width: 14.125rem;
+    height: 10.5rem;
   }
 }
 .section-container--unmissable-right .block i {
@@ -924,6 +945,7 @@ table {
 @media (min-width: 1024px) {
   .tendance-container {
     max-width: 64rem;
+    padding-right: 2rem;
   }
 }
 .tendance-container--icon {
@@ -936,6 +958,11 @@ table {
   border: 0.1rem solid var(--black);
   background-color: var(--white);
   z-index: 2;
+}
+@media (min-width: 1024px) {
+  .tendance-container--icon {
+    display: none;
+  }
 }
 .tendance-container--title {
   display: flex;
@@ -973,6 +1000,11 @@ table {
 @media (min-width: 768px) {
   .tendance-container--content .block {
     min-width: 17.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .tendance-container--content .block {
+    margin-right: 1rem;
   }
 }
 .tendance-container--content .block p {
