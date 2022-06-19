@@ -285,6 +285,12 @@ table {
   margin-top: 8rem;
   padding-left: 1.5rem;
 }
+@media (min-width: 768px) {
+  .main-container--h1 {
+    font-size: 3.5rem;
+    margin-top: 6rem;
+  }
+}
 .main-container--h1 span {
   color: var(--pink);
 }
@@ -297,11 +303,21 @@ table {
   top: 0.7rem;
   right: 0.7rem;
 }
+@media (min-width: 768px) {
+  .main-container--icone .icon i {
+    display: none;
+  }
+}
 .main-container--list {
   display: flex;
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .main-container--list {
+    flex-wrap: wrap;
+  }
 }
 .main-container--list > div {
   display: flex;
@@ -314,6 +330,13 @@ table {
   border-radius: 0.7rem;
   padding: 0.7rem 0.7rem;
   margin-left: 0.7rem;
+}
+@media (min-width: 768px) {
+  .main-container--list > div {
+    min-height: 4.25rem;
+    width: 10.625rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .main-container--list > div:hover {
   background-color: var(--black);
@@ -328,6 +351,11 @@ table {
 .main-container--list > div:first-child {
   margin-left: 0;
 }
+@media (min-width: 768px) {
+  .main-container--list > div:nth-child(5) {
+    margin-left: 0;
+  }
+}
 .main-container--list > div a {
   font-family: var(--TripSansMedium);
   font-size: 1rem;
@@ -341,11 +369,20 @@ table {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .main-container--pictures {
+    flex-direction: row;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 .main-container--pictures-left img {
   object-fit: cover;
   object-position: center;
+  padding-right: 0.1rem;
+  min-width: 29.375rem;
 }
 .main-container--pictures-left a {
   position: absolute;
@@ -358,11 +395,45 @@ table {
   padding: 0.8rem;
   border-radius: 2rem;
 }
+@media (min-width: 768px) {
+  .main-container--pictures-left a {
+    left: 2rem;
+  }
+}
 .main-container--pictures-right {
   display: none;
 }
+@media (min-width: 768px) {
+  .main-container--pictures-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .main-container--pictures-right img {
+    object-fit: cover;
+    object-position: center;
+    min-width: 14.375rem;
+    min-height: 10.4rem;
+  }
+}
 .main-container--links {
   display: none;
+}
+@media (min-width: 768px) {
+  .main-container--links {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-family: var(--TripSans);
+    font-size: 0.7rem;
+    margin-bottom: 4rem;
+  }
+  .main-container--links .block a:hover {
+    text-decoration: underline;
+  }
 }
 .main-container--ville {
   display: flex;
@@ -371,11 +442,23 @@ table {
   padding-right: 2rem;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .main-container--ville {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 .main-container--ville-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .main-container--ville-description {
+    justify-content: start;
+    width: 25.35rem;
+  }
 }
 .main-container--ville-description h2 {
   font-family: var(--TripSansMedium);
@@ -395,6 +478,11 @@ table {
   flex-direction: column;
   max-width: 44rem;
   border-radius: 2rem;
+}
+@media (min-width: 768px) {
+  .main-container--ville-organisation {
+    width: 26.25rem;
+  }
 }
 .main-container--ville-organisation .paris {
   background-color: var(--pink);

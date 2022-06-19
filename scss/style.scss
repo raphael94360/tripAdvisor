@@ -152,6 +152,10 @@
     margin-bottom: 1rem;
     margin-top: 8rem;
     padding-left: 1.5rem;
+    @include medium {
+      font-size: 3.5rem;
+      margin-top: 6rem;
+    }
   }
 
   &--h1 span {
@@ -165,6 +169,9 @@
         font-size: 1.3rem;
         top: 0.7rem;
         right: 0.7rem;
+        @include medium {
+          display: none;
+        }
       }
   }
 
@@ -173,8 +180,9 @@
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
     overflow: hidden;
-    // background-color: #545454;
-    // background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+    @include medium {
+      flex-wrap: wrap;
+    }
   }
 
   &--list > div {
@@ -188,6 +196,11 @@
     border-radius: 0.7rem;
     padding: 0.7rem 0.7rem;
     margin-left: 0.7rem;
+    @include medium {
+      min-height: 4.25rem;
+      width: 10.625rem;
+      margin-bottom: 0.5rem;
+    }
   }
 
 
@@ -208,11 +221,16 @@
     margin-left: 0;
   }
 
+  &--list > div:nth-child(5) {
+    @include medium {
+      margin-left: 0;
+    }
+  }
+
   &--list > div a {
     font-family: var(--TripSansMedium);
     font-size: 1rem;
     padding-right: 0.8rem;
-    // background-color: var(--white);
     cursor: pointer;
   }
 
@@ -225,12 +243,20 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    @include medium {
+      flex-direction: row;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
+
 
   &--pictures-left img {
     object-fit: cover;
     object-position: center;
+    padding-right: 0.1rem;
+    min-width: 29.375rem;
   }
 
   &--pictures-left a {
@@ -243,14 +269,43 @@
     background-color: var(--black);
     padding: 0.8rem;
     border-radius: 2rem;
+    @include medium {
+      left: 2rem;
+    }
   }
 
   &--pictures-right {
     display: none;
+    @include medium {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+  }
+
+  &--pictures-right img {
+    @include medium {
+      object-fit: cover;
+      object-position: center;
+      min-width: 14.375rem;
+      min-height: 10.4rem; 
+    }
   }
 
   &--links {
     display: none;
+    @include medium {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      font-family: var(--TripSans);
+      font-size: 0.7rem;
+      margin-bottom: 4rem;
+      .block a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &--ville {
@@ -259,12 +314,20 @@
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 2rem;
+    @include medium {
+      flex-direction: row;
+      gap: 2rem;
+    }
 
     &-description {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-bottom: 2rem;
+      @include medium {
+        justify-content: start;
+        width: 25.35rem;
+      }
     }
 
     &-description h2 {
@@ -287,6 +350,9 @@
       flex-direction: column;
       max-width: 44rem;
       border-radius: 2rem;
+      @include medium {
+        width: 26.25rem;
+      }
     }
 
     &-organisation .paris {
