@@ -224,7 +224,7 @@ table {
   }
 }
 .header-container--logo img {
-  width: 10rem;
+  width: 8.5rem;
 }
 @media (min-width: 768px) {
   .header-container--logo img {
@@ -278,7 +278,7 @@ table {
 }
 .main-container--h1 {
   font-family: var(--TripSansMedium);
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: 1.1px;
   margin-bottom: 1rem;
@@ -287,6 +287,15 @@ table {
 }
 .main-container--h1 span {
   color: var(--pink);
+}
+.main-container--icone {
+  position: relative;
+}
+.main-container--icone .icon i {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 0.7rem;
+  right: 0.7rem;
 }
 .main-container--list {
   display: flex;
@@ -306,6 +315,16 @@ table {
   padding: 0.7rem 0.7rem;
   margin-left: 0.7rem;
 }
+.main-container--list > div:hover {
+  background-color: var(--black);
+}
+.main-container--list > div:hover a {
+  background-color: var(--black);
+  color: var(--white);
+}
+.main-container--list > div:hover i {
+  color: var(--white);
+}
 .main-container--list > div:first-child {
   margin-left: 0;
 }
@@ -313,12 +332,7 @@ table {
   font-family: var(--TripSansMedium);
   font-size: 1rem;
   padding-right: 0.8rem;
-  background-color: var(--white);
   cursor: pointer;
-}
-.main-container--list > div a:hover {
-  background-color: var(--black);
-  color: var(--white);
 }
 .main-container--list > div i {
   font-size: 0.9rem;
@@ -332,8 +346,6 @@ table {
 .main-container--pictures-left img {
   object-fit: cover;
   object-position: center;
-  width: 31.25rem;
-  max-height: 17.25rem;
 }
 .main-container--pictures-left a {
   position: absolute;
@@ -425,7 +437,6 @@ table {
   max-width: 50rem;
   margin: 0 auto;
   padding-left: 2rem;
-  padding-right: 2rem;
   margin-bottom: 5rem;
 }
 .section-container h2 {
@@ -452,7 +463,19 @@ table {
 .section-container--unmissable {
   display: flex;
   flex-direction: column;
+  position: relative;
   overflow: hidden;
+}
+.section-container--unmissable-icon i {
+  position: absolute;
+  top: 16rem;
+  right: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1.6rem;
+  border: 0.1rem solid var(--black);
+  background-color: var(--white);
+  z-index: 2;
 }
 .section-container--unmissable-left h3 {
   font-family: var(--TripSansMedium);
@@ -483,7 +506,7 @@ table {
   flex-direction: column;
   flex-shrink: 0;
   max-width: 350px;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   position: relative;
 }
 .section-container--unmissable-right .block img {
@@ -538,6 +561,22 @@ table {
 .section-container--popular {
   display: flex;
   overflow: hidden;
+  position: relative;
+}
+.section-container--popular-icon i {
+  position: absolute;
+  top: 7rem;
+  right: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1.6rem;
+  border: 0.1rem solid var(--black);
+  background-color: var(--white);
+  z-index: 2;
+}
+.section-container--popular-icon i:hover {
+  color: var(--white);
+  background-color: var(--black);
 }
 .section-container--popular .block {
   display: flex;
@@ -675,9 +714,20 @@ table {
   max-width: 50rem;
   margin: 0 auto;
   padding-left: 2rem;
-  padding-right: 2rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.tendance-container--icon {
+  position: absolute;
+  top: 6rem;
+  right: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1.6rem;
+  border: 0.1rem solid var(--black);
+  background-color: var(--white);
+  z-index: 2;
 }
 .tendance-container--title {
   display: flex;

@@ -93,7 +93,7 @@
   }
 
   &--logo img {
-    width: 10rem;
+    width: 8.5rem;
     @include medium {
       min-width: 11.5rem;
       margin-right: 0.5rem;
@@ -146,7 +146,7 @@
   
   &--h1 {
     font-family: var(--TripSansMedium);
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 900;
     letter-spacing: 1.1px;
     margin-bottom: 1rem;
@@ -158,12 +158,23 @@
     color: var(--pink);
   }
 
+  &--icone {
+    position: relative;
+    .icon i {
+        position:absolute;
+        font-size: 1.3rem;
+        top: 0.7rem;
+        right: 0.7rem;
+      }
+  }
+
   &--list {
     display: flex;
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
     overflow: hidden;
-
+    // background-color: #545454;
+    // background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
   }
 
   &--list > div {
@@ -179,6 +190,20 @@
     margin-left: 0.7rem;
   }
 
+
+  &--list > div:hover {
+    background-color: var(--black);
+    a {
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    i {
+      color: var(--white);
+    }
+   
+  }
+
   &--list > div:first-child {
     margin-left: 0;
   }
@@ -187,14 +212,10 @@
     font-family: var(--TripSansMedium);
     font-size: 1rem;
     padding-right: 0.8rem;
-    background-color: var(--white);
+    // background-color: var(--white);
     cursor: pointer;
   }
 
-  &--list > div a:hover {
-    background-color: var(--black);
-    color: var(--white);
-  }
 
   &--list > div i {
     font-size: .9rem;
@@ -210,8 +231,6 @@
   &--pictures-left img {
     object-fit: cover;
     object-position: center;
-    width: 31.25rem;
-    max-height: 17.25rem;
   }
 
   &--pictures-left a {
@@ -319,7 +338,7 @@
   max-width: 50rem;
   margin: 0 auto;
   padding-left: 2rem;
-  padding-right: 2rem;
+  // padding-right: 2rem;
   margin-bottom: 5rem;
 
   h2 {
@@ -350,7 +369,20 @@
   &--unmissable {
     display: flex;
     flex-direction: column;
+    position: relative;
     overflow: hidden;
+
+    &-icon i {
+      position: absolute;
+      top: 16rem;
+      right: 0.3rem;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 1.6rem;
+      border: 0.1rem solid var(--black);
+      background-color: var(--white);
+      z-index: 2;
+    }
 
     &-left {
   
@@ -388,7 +420,7 @@
         flex-direction: column;
         flex-shrink: 0;
         max-width: 350px;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         position: relative;
 
         img {
@@ -454,6 +486,24 @@
   &--popular {
     display: flex;
     overflow: hidden;
+    position: relative;
+
+    &-icon i {
+      position: absolute;
+      top: 7rem;
+      right: 0.3rem;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 1.6rem;
+      border: 0.1rem solid var(--black);
+      background-color: var(--white);
+      z-index: 2;
+    }
+
+    &-icon i:hover {
+      color: var(--white);
+      background-color: var(--black);
+    }
 
     .block {
       display: flex;
@@ -624,9 +674,22 @@
   max-width: 50rem;
   margin: 0 auto;
   padding-left: 2rem;
-  padding-right: 2rem;
+  // padding-right: 2rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &--icon {
+    position: absolute;
+    top: 6rem;
+    right: 0.3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1.6rem;
+    border: 0.1rem solid var(--black);
+    background-color: var(--white);
+    z-index: 2;
+  }
 
   &--title {
     display: flex;
