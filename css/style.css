@@ -554,9 +554,14 @@ table {
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  .section-container--unmissable {
+    flex-direction: row;
+  }
+}
 .section-container--unmissable-icon i {
   position: absolute;
-  top: 16rem;
+  top: 3rem;
   right: 0.3rem;
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -564,6 +569,11 @@ table {
   border: 0.1rem solid var(--black);
   background-color: var(--white);
   z-index: 2;
+}
+@media (min-width: 768px) {
+  .section-container--unmissable-left {
+    min-width: 14.5rem;
+  }
 }
 .section-container--unmissable-left h3 {
   font-family: var(--TripSansMedium);
@@ -597,10 +607,21 @@ table {
   margin-right: 0.5rem;
   position: relative;
 }
+@media (min-width: 768px) {
+  .section-container--unmissable-right .block {
+    width: 11.5rem;
+  }
+}
 .section-container--unmissable-right .block img {
   width: 350px;
   height: 263px;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .section-container--unmissable-right .block img {
+    width: 11.5rem;
+    height: 8.75rem;
+  }
 }
 .section-container--unmissable-right .block i {
   position: absolute;
@@ -831,6 +852,7 @@ table {
   font-family: var(--TripSansMedium);
   font-size: 1rem;
   text-decoration: underline;
+  padding-right: 1.5rem;
 }
 .tendance-container--content {
   display: flex;
@@ -843,11 +865,16 @@ table {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 0.5rem;
-  min-width: 22rem;
+  width: 22rem;
   height: 9rem;
   background-color: #faf1ed;
   padding: 1.7rem 1.5rem;
   border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .tendance-container--content .block {
+    min-width: 17.875rem;
+  }
 }
 .tendance-container--content .block p {
   font-family: var(--TripSansMedium);
