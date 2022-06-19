@@ -361,6 +361,11 @@ table {
     margin-bottom: 0.5rem;
   }
 }
+@media (min-width: 1024px) {
+  .main-container--list > div {
+    width: 14.25rem;
+  }
+}
 .main-container--list > div:hover {
   background-color: var(--black);
 }
@@ -407,6 +412,12 @@ table {
   padding-right: 0.1rem;
   min-width: 29.375rem;
 }
+@media (min-width: 1024px) {
+  .main-container--pictures-left img {
+    min-width: 34.875rem;
+    max-height: 23.25rem;
+  }
+}
 .main-container--pictures-left a {
   position: absolute;
   font-family: var(--TripSansMedium);
@@ -441,6 +452,12 @@ table {
     min-height: 10.4rem;
   }
 }
+@media (min-width: 1024px) {
+  .main-container--pictures-right img {
+    min-width: 24.75rem;
+    max-height: 11.55rem;
+  }
+}
 .main-container--links {
   display: none;
 }
@@ -471,6 +488,11 @@ table {
     gap: 2rem;
   }
 }
+@media (min-width: 1024px) {
+  .main-container--ville {
+    justify-content: space-between;
+  }
+}
 .main-container--ville-description {
   display: flex;
   flex-direction: column;
@@ -481,6 +503,11 @@ table {
   .main-container--ville-description {
     justify-content: start;
     width: 25.35rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main-container--ville-description {
+    width: 31.75rem;
   }
 }
 .main-container--ville-description h2 {

@@ -150,7 +150,6 @@
   }
 }
 
-
 /* ----------- MAIN --------------- */
 
 .main-container {
@@ -217,6 +216,9 @@
       width: 10.625rem;
       margin-bottom: 0.5rem;
     }
+    @include large {
+      width: 14.25rem;
+    }
   }
 
 
@@ -273,6 +275,10 @@
     object-position: center;
     padding-right: 0.1rem;
     min-width: 29.375rem;
+    @include large {
+      min-width: 34.875rem;
+      max-height: 23.25rem;
+    }
   }
 
   &--pictures-left a {
@@ -306,6 +312,10 @@
       min-width: 14.375rem;
       min-height: 10.4rem; 
     }
+    @include large {
+      min-width: 24.75rem;
+      max-height: 11.55rem;
+    }
   }
 
   &--links {
@@ -334,6 +344,9 @@
       flex-direction: row;
       gap: 2rem;
     }
+    @include large {
+      justify-content: space-between;
+    }
 
     &-description {
       display: flex;
@@ -343,6 +356,9 @@
       @include medium {
         justify-content: start;
         width: 25.35rem;
+      }
+      @include large {
+        width: 31.75rem;
       }
     }
 
