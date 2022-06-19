@@ -759,6 +759,11 @@ table {
   background-color: var(--white);
   z-index: 2;
 }
+@media (min-width: 1024px) {
+  .section-container--popular-icon i {
+    top: 6rem;
+  }
+}
 .section-container--popular-icon i:hover {
   color: var(--white);
   background-color: var(--black);
@@ -777,6 +782,11 @@ table {
     min-height: 13.25rem;
   }
 }
+@media (min-width: 1024px) {
+  .section-container--popular .block {
+    width: 19.125rem;
+  }
+}
 .section-container--popular .block img {
   width: 22rem;
   height: 16.375rem;
@@ -786,6 +796,12 @@ table {
   .section-container--popular .block img {
     width: 17.75rem;
     height: 13.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-container--popular .block img {
+    min-width: 19.125rem;
+    min-height: 14.375rem;
   }
 }
 .section-container--popular .block i {

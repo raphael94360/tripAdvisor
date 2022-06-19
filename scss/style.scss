@@ -626,6 +626,9 @@
       border: 0.1rem solid var(--black);
       background-color: var(--white);
       z-index: 2;
+      @include large {
+        top: 6rem;
+      }
     }
 
     &-icon i:hover {
@@ -644,6 +647,9 @@
         width: 17.75rem;
         min-height: 13.25rem;
       }
+      @include large {
+        width: 19.125rem;
+      }
 
       img {
         width: 22rem;
@@ -652,6 +658,10 @@
         @include medium {
           width: 17.75rem;
           height: 13.25rem;
+        }
+        @include large {
+          min-width: 19.125rem;
+          min-height: 14.375rem;
         }
       }
 
