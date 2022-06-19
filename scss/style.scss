@@ -569,7 +569,7 @@
 
     &-icon i {
       position: absolute;
-      top: 7rem;
+      top: 5rem;
       right: 0.3rem;
       font-size: 1.5rem;
       padding: 0.5rem;
@@ -591,11 +591,19 @@
       position: relative;
       max-width: 22rem;
       margin-right: 0.5rem;
+      @include medium {
+        width: 17.75rem;
+        min-height: 13.25rem;
+      }
 
       img {
         width: 22rem;
         height: 16.375rem;
         margin-bottom: 0.5rem;
+        @include medium {
+          width: 17.75rem;
+          height: 13.25rem;
+        }
       }
 
       i {
@@ -666,6 +674,24 @@
   &--geniale {
     display: flex;
     overflow: hidden;
+    position: relative;
+
+    &-icon i {
+      position: absolute;
+      top: 6rem;
+      right: 0.3rem;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 1.6rem;
+      border: 0.1rem solid var(--black);
+      background-color: var(--white);
+      z-index: 2;
+    }
+
+    &-icon i:hover {
+      color: var(--white);
+      background-color: var(--black);
+    }
 
     .block {
       display: flex;
@@ -674,11 +700,18 @@
       position: relative;
       max-width: 22rem;
       margin-right: 0.5rem;
+      @include medium {
+        width: 14.25rem;
+      }
 
       img {
         width: 17.675rem;
         height: 17.675rem;
         margin-bottom: 0.5rem;
+        @include medium {
+          width: 14.25rem;
+          height: 14.25rem;
+        }
       }
 
       i {
@@ -743,6 +776,9 @@
 
 
     }
+
+
+    
   }
 
 }
