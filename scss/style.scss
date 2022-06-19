@@ -24,6 +24,9 @@
   gap: 0.5rem;
   background-color: var(--white);
   z-index: 1000;
+  @include large {
+    max-width: 64rem;
+  }
 
   &--nav {
     order: 1; 
@@ -76,6 +79,13 @@
 
   &--nav .big-nav span {
       display: none;
+      @include large {
+        display: flex;
+        font-family: var(--TripSansMedium);
+        font-size: 1rem;
+        margin-left: 0.6rem;
+
+      }
   }
 
   &--nav .small-nav i {
@@ -123,6 +133,9 @@
     @include medium {
       display: flex;
     }
+    @include large {
+      min-width: 18rem;
+    }
   }
 
   &--search input i {
@@ -143,6 +156,9 @@
 .main-container {
   max-width: 50rem;
   margin: 0 auto;
+  @include large {
+    max-width: 64rem;
+  }
   
   &--h1 {
     font-family: var(--TripSansMedium);
@@ -405,6 +421,9 @@
   margin: 0 auto;
   padding-left: 2rem;
   margin-bottom: 5rem;
+  @include large {
+    max-width: 64rem;
+  }
 
   h2 {
     font-family: var(--TripSansMedium);
@@ -789,10 +808,12 @@
   max-width: 50rem;
   margin: 0 auto;
   padding-left: 2rem;
-  // padding-right: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
+  @include large {
+    max-width: 64rem;
+  }
 
   &--icon {
     position: absolute;

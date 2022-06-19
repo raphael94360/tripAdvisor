@@ -158,6 +158,11 @@ table {
   background-color: var(--white);
   z-index: 1000;
 }
+@media (min-width: 1024px) {
+  .header-container {
+    max-width: 64rem;
+  }
+}
 .header-container--nav {
   order: 1;
 }
@@ -206,6 +211,14 @@ table {
 }
 .header-container--nav .big-nav span {
   display: none;
+}
+@media (min-width: 1024px) {
+  .header-container--nav .big-nav span {
+    display: flex;
+    font-family: var(--TripSansMedium);
+    font-size: 1rem;
+    margin-left: 0.6rem;
+  }
 }
 .header-container--nav .small-nav i {
   font-size: 1.5rem;
@@ -259,6 +272,11 @@ table {
     display: flex;
   }
 }
+@media (min-width: 1024px) {
+  .header-container--search input {
+    min-width: 18rem;
+  }
+}
 .header-container--search input i {
   font-size: 2rem;
 }
@@ -275,6 +293,11 @@ table {
 .main-container {
   max-width: 50rem;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 64rem;
+  }
 }
 .main-container--h1 {
   font-family: var(--TripSansMedium);
@@ -526,6 +549,11 @@ table {
   margin: 0 auto;
   padding-left: 2rem;
   margin-bottom: 5rem;
+}
+@media (min-width: 1024px) {
+  .section-container {
+    max-width: 64rem;
+  }
 }
 .section-container h2 {
   font-family: var(--TripSansMedium);
@@ -865,6 +893,11 @@ table {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .tendance-container {
+    max-width: 64rem;
+  }
 }
 .tendance-container--icon {
   position: absolute;
