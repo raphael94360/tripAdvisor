@@ -304,6 +304,11 @@ table {
     max-width: 64rem;
   }
 }
+@media (min-width: 1184px) {
+  .main-container {
+    max-width: 80.25rem;
+  }
+}
 .main-container--h1 {
   font-family: var(--TripSansMedium);
   font-size: 2rem;
@@ -347,6 +352,12 @@ table {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 1184px) {
+  .main-container--list {
+    flex-wrap: nowrap;
+    padding-right: 1.5rem;
+  }
+}
 .main-container--list > div {
   display: flex;
   flex-direction: row;
@@ -369,6 +380,16 @@ table {
 @media (min-width: 1024px) {
   .main-container--list > div {
     width: 14.25rem;
+  }
+}
+@media (min-width: 1184px) {
+  .main-container--list > div {
+    width: 11rem;
+  }
+}
+@media (min-width: 1184px) {
+  .main-container--list .hidden {
+    display: none;
   }
 }
 .main-container--list > div:hover {
@@ -423,6 +444,12 @@ table {
     max-height: 23.25rem;
   }
 }
+@media (min-width: 1184px) {
+  .main-container--pictures-left img {
+    min-width: 39.875rem;
+    max-height: 26.7rem;
+  }
+}
 .main-container--pictures-left a {
   position: absolute;
   font-family: var(--TripSansMedium);
@@ -461,6 +488,12 @@ table {
   .main-container--pictures-right img {
     min-width: 24.75rem;
     max-height: 11.55rem;
+  }
+}
+@media (min-width: 1184px) {
+  .main-container--pictures-right img {
+    min-width: 29.625rem;
+    max-height: 13.3rem;
   }
 }
 .main-container--links {
@@ -513,6 +546,11 @@ table {
 @media (min-width: 1024px) {
   .main-container--ville-description {
     width: 31.75rem;
+  }
+}
+@media (min-width: 1184px) {
+  .main-container--ville-description {
+    width: 41.375rem;
   }
 }
 .main-container--ville-description h2 {

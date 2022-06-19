@@ -160,6 +160,9 @@
   @include large {
     max-width: 64rem;
   }
+  @include xlarge {
+    max-width: 80.25rem;
+  }
   
   &--h1 {
     font-family: var(--TripSansMedium);
@@ -200,6 +203,10 @@
     @include medium {
       flex-wrap: wrap;
     }
+    @include xlarge {
+      flex-wrap: nowrap;
+      padding-right: 1.5rem;
+    }
   }
 
   &--list > div {
@@ -220,6 +227,15 @@
     }
     @include large {
       width: 14.25rem;
+    }
+    @include xlarge {
+      width: 11rem;
+    }
+  }
+
+  &--list .hidden {
+    @include xlarge {
+      display: none;
     }
   }
 
@@ -281,6 +297,10 @@
       min-width: 34.875rem;
       max-height: 23.25rem;
     }
+    @include xlarge {
+      min-width: 39.875rem;
+      max-height: 26.70rem;
+    }
   }
 
   &--pictures-left a {
@@ -317,6 +337,10 @@
     @include large {
       min-width: 24.75rem;
       max-height: 11.55rem;
+    }
+    @include xlarge {
+      min-width: 29.625rem;
+      max-height: 13.30rem;
     }
   }
 
@@ -361,6 +385,9 @@
       }
       @include large {
         width: 31.75rem;
+      }
+      @include xlarge {
+        width: 41.375rem;
       }
     }
 
