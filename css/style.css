@@ -151,8 +151,9 @@ table {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
   min-height: 4.5rem;
-  max-width: 31.25rem;
+  max-width: 73.75rem;
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -161,147 +162,98 @@ table {
   justify-content: space-between;
   align-items: center;
   background-color: var(--white);
-  z-index: 1000;
 }
-@media (min-width: 48rem) {
-  .header-container {
-    max-width: 48rem;
-  }
-}
-@media (min-width: 64rem) {
-  .header-container {
-    max-width: 64rem;
-  }
-}
-@media (min-width: 90rem) {
-  .header-container {
-    max-width: 90rem;
-    border-bottom: 1px solid var(--grey);
-  }
-}
-.header-container--nav {
+.header-nav {
   order: 1;
 }
 @media (min-width: 48rem) {
-  .header-container--nav {
-    order: 3;
+  .header-nav {
+    order: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 }
-.header-container--nav a {
-  padding: 0.6rem;
+.header-nav .small-nav {
+  color: var(--black);
+  font-size: 1.5rem;
 }
-.header-container--nav a:last-child {
-  font-family: var(--TripSansMedium);
+@media (min-width: 48rem) {
+  .header-nav .small-nav {
+    display: none;
+  }
+}
+.header-nav .big-nav {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .header-nav .big-nav {
+    display: flex;
+    font-family: var(--TripSans);
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding: 0.8rem 0.8rem;
+    color: var(--black);
+    margin-right: 0.4rem;
+  }
+}
+.header-nav .big-nav:hover {
+  background-color: #eee;
+  padding: 0.8rem 0.8rem;
+  border-radius: 1.6rem;
+}
+.header-nav .big-nav:last-child {
+  font-family: var(--TripSans);
   font-size: 1rem;
-  font-weight: 100;
   padding: 0.7rem 0.8rem;
   color: var(--white);
-  border-radius: 2rem;
-  margin-right: 0;
   background-color: var(--black);
-  transition: background-color 1s;
+  border-radius: 1.6rem;
 }
-.header-container--nav a:hover {
-  background-color: #eee;
-  padding: 0.6rem;
-  border-radius: 1rem;
-}
-.header-container--nav a:last-child:hover {
+.header-nav .big-nav:last-child:hover {
   padding: 0.7rem 0.8rem;
   border-radius: 2rem;
   background-color: var(--grey);
+  transition: background-color 1s;
 }
-.header-container--nav .big-nav {
-  display: none;
-}
-@media (min-width: 48rem) {
-  .header-container--nav .big-nav {
-    display: flex;
-    margin-right: 0.4rem;
-    font-size: 1.1rem;
-  }
-}
-.header-container--nav .big-nav span {
+.header-nav .big-nav span {
   display: none;
 }
 @media (min-width: 64rem) {
-  .header-container--nav .big-nav span {
+  .header-nav .big-nav span {
     display: flex;
     font-family: var(--TripSansMedium);
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-left: 0.6rem;
   }
 }
-.header-container--nav .small-nav i {
-  font-size: 1.5rem;
-}
-@media (min-width: 48rem) {
-  .header-container--nav .small-nav i {
-    display: none;
-  }
-}
-.header-container--logo {
-  order: 2;
-}
-@media (min-width: 48rem) {
-  .header-container--logo {
-    order: 1;
-  }
-}
-.header-container--logo img {
-  width: 8.5rem;
-}
-@media (min-width: 48rem) {
-  .header-container--logo img {
-    min-width: 11.5rem;
-    margin-right: 0.5rem;
-  }
-}
-.header-container--search {
+.header-search {
   order: 3;
 }
 @media (min-width: 48rem) {
-  .header-container--search {
-    order: 2;
+  .header-search {
+    display: none;
   }
 }
-.header-container--search input {
-  font-family: var(--TripSans);
-  font-size: 0.9rem;
-  display: none;
-  min-width: 11rem;
-  min-height: 2.5rem;
-  padding: 0.3rem 0 0.3rem 2rem;
-  border-radius: 2rem;
-  border: none;
-  border: 0.15rem solid #ddd;
-  background-image: url("../assets/img/search.png");
-  background-repeat: no-repeat;
-  background-position: 0.5rem;
-}
-@media (min-width: 48rem) {
-  .header-container--search input {
-    display: flex;
-  }
-}
-@media (min-width: 64rem) {
-  .header-container--search input {
-    min-width: 18rem;
-  }
-}
-.header-container--search input i {
-  font-size: 2rem;
-}
-.header-container--search .small-search {
+.header-search i {
   font-size: 1.5rem;
 }
+.header-logo {
+  order: 2;
+}
 @media (min-width: 48rem) {
-  .header-container--search .small-search {
-    display: none;
+  .header-logo {
+    order: 1;
+  }
+}
+.header-logo img {
+  width: 8.5rem;
+}
+@media (min-width: 48rem) {
+  .header-logo img {
+    min-width: 11.5rem;
+    margin-right: 0.5rem;
   }
 }
 

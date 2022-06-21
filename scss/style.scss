@@ -9,41 +9,30 @@
 
 /* ---------- HEADER -------------- */
 
-.header-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;;
-  min-height: 4.5rem;
-  max-width: 31.25rem;
-  margin: 0 auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--white);
-  z-index: 1000;
+.header {
 
-  @include medium {
-    max-width: 48rem;
+  &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    min-height: 4.5rem;
+    max-width: 73.75rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
   }
 
-  @include large {
-    max-width: 64rem;
-  }
-
-  @include xlarge {
-    max-width: 90rem;
-    // justify-content: center;
-    border-bottom: 1px solid var(--grey);
-  }
-
-  &--nav {
+  &-nav {
     order: 1; 
     @include medium {
-      order: 3;
+      order: 2;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -51,69 +40,79 @@
     }
   }
 
-  &--nav a {
-    padding: 0.6rem;
+  &-nav .small-nav {
+    color: var(--black);
+    font-size: 1.5rem;
+    @include medium {
+      display: none;
+    }
   }
 
-  &--nav a:last-child {
-    font-family: var(--TripSansMedium);
+  &-nav .big-nav {
+    display: none;
+    @include medium {
+      display: flex;
+      font-family: var(--TripSans);
+      font-size: 1.3rem;
+      font-weight: 100;
+      padding: 0.8rem 0.8rem;
+      color: var(--black);
+      margin-right: 0.4rem;
+    }
+  }
+
+  &-nav .big-nav:hover {
+    background-color: #eee;
+    padding: 0.8rem 0.8rem;
+    border-radius: 1.6rem;
+  }
+
+  &-nav .big-nav:last-child {
+    font-family: var(--TripSans);
     font-size: 1rem;
-    font-weight: 100;
     padding: 0.7rem 0.8rem;
     color: var(--white);
-    border-radius: 2rem;
-    margin-right: 0;
     background-color: var(--black);
-    transition: background-color 1s;
-  }
+    border-radius: 1.6rem;
+  } 
 
-  &--nav a:hover {
-    background-color: #eee;
-    padding: 0.6rem;
-    border-radius: 1rem;
-  }
-
-  &--nav a:last-child:hover {
+  &-nav .big-nav:last-child:hover {
     padding: 0.7rem 0.8rem;
     border-radius: 2rem;
     background-color: var(--grey);
+    transition: background-color 1s;
   }
 
-  &--nav .big-nav {
+  &-nav .big-nav span {
+    display: none;
+    @include large {
+      display: flex;
+      font-family: var(--TripSansMedium);
+      font-size: 1.1rem;
+      margin-left: 0.6rem;
+    }
+  }
+
+  &-search {
+    order: 3;
+    @include medium {
       display: none;
-      @include medium {
-        display: flex;
-        margin-right: 0.4rem;
-        font-size: 1.1rem;
-      }
+    }
   }
 
-  &--nav .big-nav span {
-      display: none;
-      @include large {
-        display: flex;
-        font-family: var(--TripSansMedium);
-        font-size: 1rem;
-        margin-left: 0.6rem;
-
-      }
+  &-search i {
+    font-size: 1.5rem;
   }
 
-  &--nav .small-nav i {
-      font-size: 1.5rem;
-      @include medium {
-        display: none;
-      }
-  }
 
-  &--logo {
+  &-logo {
     order: 2;
     @include medium {
       order: 1;
     }
   }
 
-  &--logo img {
+  &-logo img {
     width: 8.5rem;
     @include medium {
       min-width: 11.5rem;
@@ -121,45 +120,9 @@
     }
   }
 
-  &--search {
-    order: 3;
-    @include medium {
-      order: 2;
-    }
-  }
-
-  &--search input {
-    font-family: var(--TripSans);
-    font-size: 0.9rem;
-    display: none;
-    min-width: 11rem;
-    min-height: 2.5rem;
-    padding: 0.3rem 0 0.3rem 2rem;
-    border-radius: 2rem;
-    border: none;
-    border: 0.15rem solid #ddd;
-    background-image: url("../assets/img/search.png");
-    background-repeat: no-repeat;
-    background-position: 0.5rem;
-    @include medium {
-      display: flex;
-    }
-    @include large {
-      min-width: 18rem;
-    }
-  }
-
-  &--search input i {
-    font-size: 2rem;
-  }
-
-  &--search .small-search {
-     font-size: 1.5rem;
-     @include medium {
-      display: none;
-     }
-  }
 }
+
+
 
 /* ----------- MAIN --------------- */
 
