@@ -54,6 +54,11 @@ img {
   max-width: 100%;
 }
 
+form {
+  width: 500px;
+  height: 500px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -147,7 +152,7 @@ table {
   left: 0;
   right: 0;
   min-height: 4.5rem;
-  min-width: 31.25rem;
+  max-width: 31.25rem;
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -158,9 +163,20 @@ table {
   background-color: var(--white);
   z-index: 1000;
 }
+@media (min-width: 48rem) {
+  .header-container {
+    max-width: 48rem;
+  }
+}
+@media (min-width: 64rem) {
+  .header-container {
+    max-width: 64rem;
+  }
+}
 @media (min-width: 90rem) {
   .header-container {
-    max-width: 71.25rem;
+    max-width: 90rem;
+    border-bottom: 1px solid var(--grey);
   }
 }
 .header-container--nav {

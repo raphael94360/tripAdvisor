@@ -1,6 +1,7 @@
 @import "variables";
 @import "fonts";
 @import "general";
+@import "formulaire";
 @import "reset";
 @import "footer";
 @import "media-queries";
@@ -14,7 +15,7 @@
   left: 0;
   right: 0;;
   min-height: 4.5rem;
-  min-width: 31.25rem;
+  max-width: 31.25rem;
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -25,8 +26,18 @@
   background-color: var(--white);
   z-index: 1000;
 
+  @include medium {
+    max-width: 48rem;
+  }
+
+  @include large {
+    max-width: 64rem;
+  }
+
   @include xlarge {
-    max-width: 71.25rem;
+    max-width: 90rem;
+    // justify-content: center;
+    border-bottom: 1px solid var(--grey);
   }
 
   &--nav {
