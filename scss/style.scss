@@ -104,7 +104,6 @@
     font-size: 1.5rem;
   }
 
-
   &-logo {
     order: 2;
     @include medium {
@@ -122,27 +121,27 @@
 
 }
 
-
-
 /* ----------- MAIN --------------- */
 
-.main-container {
-  max-width: 31.25rem;
+.main {
+  
+  &-container {
+  max-width: 73.75rem;
   margin: 0 auto;
+}
+  // @include medium {
+  //   max-width: 48rem;
+  // }
   
-  @include medium {
-    max-width: 48rem;
-  }
+  // @include large {
+  //   max-width: 64rem;
+  // }
   
-  @include large {
-    max-width: 64rem;
-  }
+  // @include xlarge {
+  //   max-width: 71.25rem;
+  // }
   
-  @include xlarge {
-    max-width: 71.25rem;
-  }
-  
-  &--h1 {
+  &-h1 {
     font-family: var(--TripSansMedium);
     font-size: 2rem;
     font-weight: 900;
@@ -165,30 +164,12 @@
 
   }
 
-  &--h1 span {
+  &-h1 span {
     color: var(--pink);
   }
 
-  &--icone {
-    position: relative;
-    .icon i {
-        position:absolute;
-        padding: 0.5rem;
-        border-radius: 50%;
-        background-color: var(--black);
-        font-size: 1rem;
-        color: var(--white);
-        top: 0.3rem;
-        right: 0.1rem;
 
-        @include medium {
-          display: none;
-        }
-
-      }
-  }
-
-  &--list {
+  &-list {
     display: flex;
     margin-bottom: 1.5rem;
     overflow: hidden;
@@ -210,7 +191,7 @@
 
   }
 
-  &--list > div {
+  &-list > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -238,7 +219,7 @@
 
   }
 
-  &--list .hidden {
+  &-list .hidden {
     
     @include xlarge {
       display: none;
@@ -246,7 +227,7 @@
 
   }
 
-  &--list > div:hover {
+  &-list > div:hover {
     background-color: var(--black);
     
     a {
@@ -260,11 +241,11 @@
    
   }
 
-  &--list > div:first-child {
+  &-list > div:first-child {
     margin-left: 0;
   }
 
-  &--list > div:nth-child(5) {
+  &-list > div:nth-child(5) {
     
     @include medium {
       margin-left: 0;
@@ -272,18 +253,18 @@
   }
 
 
-  &--list > div a {
+  &-list > div a {
     font-family: var(--TripSansMedium);
     font-size: 1rem;
     padding-right: 0.8rem;
     cursor: pointer;
   }
 
-  &--list > div i {
+  &-list > div i {
     font-size: .9rem;
   }
 
-  &--pictures {
+  &-pictures {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -292,27 +273,25 @@
     @include medium {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       gap: 0.1rem;
-    }
-
-    @include large {
-      width: 60.975rem;
-    }
-
-    @include xlarge {
-      width: 71.25rem;
+      height: 276px;
     }
 
   }
 
-  &--pictures-left img {
-    min-width: 28.75rem;
+  &-pictures-left {
+    flex: 2;
+  }
+
+  &-pictures-left img {
+    object-fit: cover;
 
     @include medium {
-      max-width: 29.125rem;
-      max-height: 17.30rem;
+      width: 100%;
+      height: 100%;
     }
     
     @include large {
@@ -325,10 +304,10 @@
     }
   }
 
-  &--pictures-left a {
+  &-pictures-left a {
     position: absolute;
-    font-family: var(--TripSansMedium);
-    font-size: 0.8rem;
+    font-family: var(--TripSans);
+    font-size: 0.7rem;
     bottom: 1rem;
     left: 1rem;
     color: var(--white);
@@ -341,7 +320,7 @@
     }
   }
 
-  &--pictures-right {
+  &-pictures-right {
     display: none;
     
     @include medium {
@@ -352,13 +331,15 @@
 
   }
 
-  &--pictures-right img {
-    
+  &-pictures-right {
+    flex: 1;
+  }
+
+  &-pictures-right img {
+      object-fit: cover;
     @include medium {
-      // object-fit: cover;
-      // object-position: center;
-      max-width: 14.625rem;
-      max-height: 8.70rem; 
+      width: 100%;
+      height: 100%; 
     }
     
     @include large {
@@ -375,7 +356,7 @@
     }
   }
 
-  &--links {
+  &-links {
     display: none;
     
     @include medium {
@@ -393,7 +374,7 @@
 
   }
 
-  &--ville {
+  &-ville {
     display: flex; 
     flex-direction: column;
     padding-left: 2rem;

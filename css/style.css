@@ -51,7 +51,8 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 form {
@@ -259,25 +260,10 @@ table {
 
 /* ----------- MAIN --------------- */
 .main-container {
-  max-width: 31.25rem;
+  max-width: 73.75rem;
   margin: 0 auto;
 }
-@media (min-width: 48rem) {
-  .main-container {
-    max-width: 48rem;
-  }
-}
-@media (min-width: 64rem) {
-  .main-container {
-    max-width: 64rem;
-  }
-}
-@media (min-width: 90rem) {
-  .main-container {
-    max-width: 71.25rem;
-  }
-}
-.main-container--h1 {
+.main-h1 {
   font-family: var(--TripSansMedium);
   font-size: 2rem;
   font-weight: 900;
@@ -287,44 +273,26 @@ table {
   padding-left: 1.5rem;
 }
 @media (min-width: 48rem) {
-  .main-container--h1 {
+  .main-h1 {
     font-size: 3rem;
   }
 }
-.main-container--h1 span {
+.main-h1 span {
   color: var(--pink);
 }
-.main-container--icone {
-  position: relative;
-}
-.main-container--icone .icon i {
-  position: absolute;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: var(--black);
-  font-size: 1rem;
-  color: var(--white);
-  top: 0.3rem;
-  right: 0.1rem;
-}
-@media (min-width: 48rem) {
-  .main-container--icone .icon i {
-    display: none;
-  }
-}
-.main-container--list {
+.main-list {
   display: flex;
   margin-bottom: 1.5rem;
   overflow: hidden;
   padding-left: 1.5rem;
 }
 @media (min-width: 48rem) {
-  .main-container--list {
+  .main-list {
     flex-wrap: wrap;
     overflow: none;
   }
 }
-.main-container--list > div {
+.main-list > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -337,104 +305,99 @@ table {
   margin-left: 0.7rem;
 }
 @media (min-width: 48rem) {
-  .main-container--list > div {
+  .main-list > div {
     min-height: 4.25rem;
     width: 10.625rem;
     margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 64rem) {
-  .main-container--list > div {
+  .main-list > div {
     width: 14.625rem;
   }
 }
 @media (min-width: 90rem) {
-  .main-container--list > div {
+  .main-list > div {
     width: 11rem;
   }
 }
 @media (min-width: 90rem) {
-  .main-container--list .hidden {
+  .main-list .hidden {
     display: none;
   }
 }
-.main-container--list > div:hover {
+.main-list > div:hover {
   background-color: var(--black);
 }
-.main-container--list > div:hover a {
+.main-list > div:hover a {
   background-color: var(--black);
   color: var(--white);
 }
-.main-container--list > div:hover i {
+.main-list > div:hover i {
   color: var(--white);
 }
-.main-container--list > div:first-child {
+.main-list > div:first-child {
   margin-left: 0;
 }
 @media (min-width: 48rem) {
-  .main-container--list > div:nth-child(5) {
+  .main-list > div:nth-child(5) {
     margin-left: 0;
   }
 }
-.main-container--list > div a {
+.main-list > div a {
   font-family: var(--TripSansMedium);
   font-size: 1rem;
   padding-right: 0.8rem;
   cursor: pointer;
 }
-.main-container--list > div i {
+.main-list > div i {
   font-size: 0.9rem;
 }
-.main-container--pictures {
+.main-pictures {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 48rem) {
-  .main-container--pictures {
+  .main-pictures {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     gap: 0.1rem;
+    height: 276px;
   }
 }
-@media (min-width: 64rem) {
-  .main-container--pictures {
-    width: 60.975rem;
-  }
+.main-pictures-left {
+  flex: 2;
 }
-@media (min-width: 90rem) {
-  .main-container--pictures {
-    width: 71.25rem;
-  }
-}
-.main-container--pictures-left img {
-  min-width: 28.75rem;
+.main-pictures-left img {
+  object-fit: cover;
 }
 @media (min-width: 48rem) {
-  .main-container--pictures-left img {
-    max-width: 29.125rem;
-    max-height: 17.3rem;
+  .main-pictures-left img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 64rem) {
-  .main-container--pictures-left img {
+  .main-pictures-left img {
     min-width: 35.125rem;
     min-height: 23.25rem;
   }
 }
 @media (min-width: 90rem) {
-  .main-container--pictures-left img {
+  .main-pictures-left img {
     min-width: 40.875rem;
     min-height: 26.875rem;
   }
 }
-.main-container--pictures-left a {
+.main-pictures-left a {
   position: absolute;
-  font-family: var(--TripSansMedium);
-  font-size: 0.8rem;
+  font-family: var(--TripSans);
+  font-size: 0.7rem;
   bottom: 1rem;
   left: 1rem;
   color: var(--white);
@@ -443,28 +406,34 @@ table {
   border-radius: 2rem;
 }
 @media (min-width: 48rem) {
-  .main-container--pictures-left a {
+  .main-pictures-left a {
     left: 2rem;
   }
 }
-.main-container--pictures-right {
+.main-pictures-right {
   display: none;
 }
 @media (min-width: 48rem) {
-  .main-container--pictures-right {
+  .main-pictures-right {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
   }
 }
+.main-pictures-right {
+  flex: 1;
+}
+.main-pictures-right img {
+  object-fit: cover;
+}
 @media (min-width: 48rem) {
-  .main-container--pictures-right img {
-    max-width: 14.625rem;
-    max-height: 8.7rem;
+  .main-pictures-right img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 64rem) {
-  .main-container--pictures-right img {
+  .main-pictures-right img {
     object-fit: cover;
     object-position: center;
     min-width: 25.125rem;
@@ -472,17 +441,17 @@ table {
   }
 }
 @media (min-width: 90rem) {
-  .main-container--pictures-right img {
+  .main-pictures-right img {
     object-fit: cover;
     min-width: 29.875rem;
     min-height: 13.35rem;
   }
 }
-.main-container--links {
+.main-links {
   display: none;
 }
 @media (min-width: 48rem) {
-  .main-container--links {
+  .main-links {
     display: flex;
     justify-content: space-between;
     padding-left: 1.5rem;
@@ -491,11 +460,11 @@ table {
     font-size: 0.7rem;
     margin-bottom: 4rem;
   }
-  .main-container--links .block a:hover {
+  .main-links .block a:hover {
     text-decoration: underline;
   }
 }
-.main-container--ville {
+.main-ville {
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
@@ -503,25 +472,25 @@ table {
   margin-bottom: 2rem;
 }
 @media (min-width: 64rem) {
-  .main-container--ville {
+  .main-ville {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.main-container--ville-description {
+.main-ville-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 @media (min-width: 64rem) {
-  .main-container--ville-description {
+  .main-ville-description {
     width: 71.75rem;
     justify-content: flex-start;
     margin-right: 1rem;
   }
 }
-.main-container--ville-description h2 {
+.main-ville-description h2 {
   font-family: var(--TripSansMedium);
   font-size: 1.6rem;
   line-height: 2rem;
@@ -529,47 +498,47 @@ table {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 48rem) {
-  .main-container--ville-description h2 {
+  .main-ville-description h2 {
     font-size: 1.8rem;
   }
 }
-.main-container--ville-description p {
+.main-ville-description p {
   font-family: var(--Georgia);
   font-size: 1rem;
   line-height: 1.4rem;
   color: var(--grey);
 }
 @media (min-width: 48rem) {
-  .main-container--ville-description p {
+  .main-ville-description p {
     font-size: 1.3rem;
     line-height: 1.7rem;
   }
 }
-.main-container--ville-organisation {
+.main-ville-organisation {
   display: flex;
   flex-direction: column;
   max-width: 44rem;
   border-radius: 2rem;
 }
-.main-container--ville-organisation .paris {
+.main-ville-organisation .paris {
   background-color: var(--pink);
   padding: 1.5rem 1.5rem 3rem 1.5rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-.main-container--ville-organisation h2 {
+.main-ville-organisation h2 {
   font-family: var(--TripSansMedium);
   font-size: 1.6rem;
   color: var(--black);
   margin-bottom: 1rem;
 }
-.main-container--ville-organisation p {
+.main-ville-organisation p {
   font-family: var(--TripSansMedium);
   font-size: 1.1rem;
   color: var(--black);
   margin-bottom: 2rem;
 }
-.main-container--ville-organisation a {
+.main-ville-organisation a {
   font-family: var(--TripSansMedium);
   font-size: 1rem;
   color: var(--white);
@@ -577,10 +546,10 @@ table {
   padding: 1rem;
   border-radius: 2rem;
 }
-.main-container--ville-organisation a:hover {
+.main-ville-organisation a:hover {
   background-color: var(--grey);
 }
-.main-container--ville-organisation .paris-map img {
+.main-ville-organisation .paris-map img {
   width: 100%;
   object-fit: cover;
   border-bottom-left-radius: 1rem;
