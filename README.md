@@ -7,7 +7,7 @@
 - FontAwesome
 - Fonts de TripAdvisor
 - Sass
-- BEM méthodologie
+
 
 
 
